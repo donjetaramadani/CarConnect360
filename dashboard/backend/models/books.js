@@ -1,35 +1,40 @@
-import { Schema, model } from "mongoose";
-const booksSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from "../database";
+
+// Define the Book model
+const Book = sequelize.define('Book', {
   title: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   description: {
-    type: String,
-    required: false,
+    type: DataTypes.STRING,
+    allowNull: true,
   },
   author: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   photoLink: {
-    type: String,
-    required: false,
+    type: DataTypes.STRING,
+    allowNull: true,
   },
   numberOfPages: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   price: {
-    type: Number,
-    required: true,
+    type: DataTypes.FLOAT,
+    allowNull: false,
   },
   aparitionYear: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
 });
 
-const books = model("books", booksSchema);
+// Synchronize the model with the database
+Book.sync();
 
-export default books;
+// Export the Book model
+export default Book;

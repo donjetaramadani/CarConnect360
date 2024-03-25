@@ -1,22 +1,67 @@
-import mongoose, { set } from "mongoose";
-import ProductModel from "./models/products";
-import { MONGO_DB_URI } from "./config";
+import { DataTypes } from 'sequelize';
+import sequelize from './database';
 import reqAuth from "./middleware/reqAuth";
 
-export class Product {
+// Define the Product model
+const Product = sequelize.define('Product', {
+  name: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  description: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  photoLink: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  price: {
+    type: DataTypes.FLOAT,
+    allowNull: false,
+  },
+  brandId: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  brandName: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  stock: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  warehouseCode: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  weight: {
+    type: DataTypes.FLOAT,
+    allowNull: false,
+  },
+});
+
+// Synchronize the model with the database
+Product.sync();
+
+// Export the Product class
+export default class ProductService {
   constructor() {
-    this.#connect()
+    this.connect();
   }
 
-  // connect mongoose to mongodb
-  #connect() {
-    mongoose.set("strictQuery", false);
-    try {
-      mongoose.connect(MONGO_DB_URI);
-    } catch (err) {
-      console.log(err);
+
+    // Connect sequelize to MySQL
+    async connect() {
+      try {
+        await sequelize.authenticate();
+        console.log('Connection to the database has been established successfully.');
+      } catch (error) {
+        console.error('Unable to connect to the database:', error);
+      }
     }
-  }
+
 
   async getChartData(token) {
     const authObject = await reqAuth(token);

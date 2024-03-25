@@ -1,23 +1,28 @@
-import { Schema, model } from "mongoose";
-const destinationsSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from "../database";
+
+// Define the Destination model
+const Destination = sequelize.define('Destination', {
   name: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   description: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   googleMapsLink: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   photoLink: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
 });
 
-const destinations = model("destinations", destinationsSchema);
+// Synchronize the model with the database
+Destination.sync();
 
-export default destinations;
+// Export the Destination model
+export default Destination;

@@ -1,31 +1,36 @@
-import { Schema, model } from "mongoose";
-const clientsSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from "../database";
+
+// Define the Client model
+const Client = sequelize.define('Client', {
   name: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   email: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   password: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   gender: {
-    type: String,
-    required: false,
+    type: DataTypes.STRING,
+    allowNull: true,
   },
   phoneNumber: {
-    type: String,
-    required: false,
+    type: DataTypes.STRING,
+    allowNull: true,
   },
   address: {
-    type: String,
-    required: false,
+    type: DataTypes.STRING,
+    allowNull: true,
   },
 });
 
-const clients = model("clients", clientsSchema);
+// Synchronize the model with the database
+Client.sync();
 
-export default clients;
+// Export the Client model
+export default Client;

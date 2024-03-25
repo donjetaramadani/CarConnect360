@@ -1,23 +1,50 @@
-import mongoose from "mongoose";
-import OrderModel from "./models/orders";
-import { MONGO_DB_URI } from "./config";
+import { DataTypes } from 'sequelize';
+import sequelize from './models/database';
 import reqAuth from "./middleware/reqAuth";
 import { numberOfPastMonths } from "./utils/constants";
 
-export class Order {
+// Define the Order model
+const Order = sequelize.define('Order', {
+  clientId: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  productIds: {
+    type: DataTypes.STRING, // Adjust the data type as per your requirement
+    allowNull: false,
+  },
+  price: {
+    type: DataTypes.FLOAT, // Adjust the data type as per your requirement
+    allowNull: false,
+  },
+  status: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  date: {
+    type: DataTypes.DATE,
+    allowNull: false,
+    defaultValue: DataTypes.NOW,
+  },
+});
+
+
+// Export the Order class
+export default class OrderService {
   constructor() {
-    this.#connect(); 
+    this.connect();
   }
 
-  // connect mongoose to mongodb
-  #connect() {
-    mongoose.set("strictQuery", false);
-    try {
-      mongoose.connect(MONGO_DB_URI);
-    } catch (err) {
-      console.log(err);
+
+    // Connect sequelize to MySQL
+    connect() {
+      try {
+        sequelize.authenticate();
+        console.log('Connection to the database has been established successfully.');
+      } catch (error) {
+        console.error('Unable to connect to the database:', error);
+      }
     }
-  }
 
   async getChartData(token) {
     const authObject = await reqAuth(token);

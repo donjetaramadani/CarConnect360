@@ -1,27 +1,32 @@
-import { Schema, model } from "mongoose";
-const roomsSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from "../database";
+
+// Define the Room model
+const Room = sequelize.define('Room', {
   name: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   description: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   numberOfRooms: {
-    type: Number,
-    required: true,
+    type: DataTypes.INTEGER,
+    allowNull: false,
   },
   hotelId: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   stars: {
-    type: Number,
-    required: true,
+    type: DataTypes.INTEGER,
+    allowNull: false,
   },
 });
 
-const rooms = model("rooms", roomsSchema);
+// Synchronize the model with the database
+Room.sync();
 
-export default rooms;
+// Export the Room model
+export default Room;

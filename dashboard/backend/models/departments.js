@@ -1,15 +1,20 @@
-import { Schema, model } from "mongoose";
-const departmentsSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from "../database";
+
+// Define the Department model
+const Department = sequelize.define('Department', {
   name: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   description: {
-    type: String,
-    required: false,
+    type: DataTypes.STRING,
+    allowNull: true,
   },
 });
 
-const departments = model("departments", departmentsSchema);
+// Synchronize the model with the database
+Department.sync();
 
-export default departments;
+// Export the Department model
+export default Department;

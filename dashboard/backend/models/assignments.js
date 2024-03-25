@@ -1,23 +1,28 @@
-import { Schema, model } from "mongoose";
-const assignmentsSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from "../database";
+
+// Define the Assignment model
+const Assignment = sequelize.define('Assignment', {
   description: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   createdBy: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   assignedTo: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   status: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
 });
 
-const assignments = model("assignments", assignmentsSchema);
+// Synchronize the model with the database
+Assignment.sync();
 
-export default assignments;
+// Export the Assignment model
+export default Assignment;

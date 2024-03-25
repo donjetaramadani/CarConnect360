@@ -1,19 +1,24 @@
-import { Schema, model } from "mongoose";
-const playlistsSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from "../database";
+
+// Define the Playlist model
+const Playlist = sequelize.define('Playlist', {
   name: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   description: {
-    type: String,
-    required: false,
+    type: DataTypes.STRING,
+    allowNull: true,
   },
   songIds: {
-    type: [String],
-    required: false,
+    type: DataTypes.ARRAY(DataTypes.STRING),
+    allowNull: true,
   },
 });
 
-const playlists = model("playlists", playlistsSchema);
+// Synchronize the model with the database
+Playlist.sync();
 
-export default playlists;
+// Export the Playlist model
+export default Playlist;

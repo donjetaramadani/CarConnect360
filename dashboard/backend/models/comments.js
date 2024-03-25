@@ -1,19 +1,24 @@
-import { Schema, model } from "mongoose";
-const commentsSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from "../database";
+
+// Define the Comment model
+const Comment = sequelize.define('Comment', {
   createdBy: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   description: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   published: {
-    type: Boolean,
-    required: true,
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
   },
 });
 
-const comments = model("comments", commentsSchema);
+// Synchronize the model with the database
+Comment.sync();
 
-export default comments;
+// Export the Comment model
+export default Comment;

@@ -1,15 +1,20 @@
-import { Schema, model } from "mongoose";
-const languagesSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from "../database";
+
+// Define the Language model
+const Language = sequelize.define('Language', {
   name: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   isoCode: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
 });
 
-const languages = model("languages", languagesSchema);
+// Synchronize the model with the database
+Language.sync();
 
-export default languages;
+// Export the Language model
+export default Language;

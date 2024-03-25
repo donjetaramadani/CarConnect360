@@ -1,21 +1,20 @@
-import { Schema, model } from "mongoose";
+import { DataTypes } from 'sequelize';
+import { sequelize } from './database.js';
 
-const activeSessionSchema = new Schema({
+const ActiveSession = sequelize.define('ActiveSession', {
   token: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   userId: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   date: {
-    type: Date,
-    required: true,
-    default: Date.now,
+    type: DataTypes.DATE,
+    allowNull: false,
+    defaultValue: DataTypes.NOW,
   },
 });
 
-const activeSession = model("ActiveSession", activeSessionSchema);
-
-export default activeSession;
+export default ActiveSession;

@@ -1,21 +1,53 @@
-import mongoose from "mongoose";
-import ArticleModel from "./models/articles";
-import { MONGO_DB_URI } from "./config";
+import { DataTypes } from 'sequelize';
+import { sequelize } from './models/database.js'; 
 import reqAuth from "./middleware/reqAuth";
 import { numberOfPastMonths } from "./utils/constants";
 
-export class Article {
+// Define the Article model
+const ArticleModel = sequelize.define('Article', {
+  title: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  content: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  publishDate: {
+    type: DataTypes.DATE,
+    allowNull: false,
+    defaultValue: DataTypes.NOW,
+  },
+  createdBy: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  tags: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
+  status: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+});
+
+// Synchronize the model with the database
+ArticleModel.sync();
+
+// Export the Article class
+export default class Article {
   constructor() {
-    this.#connect();
+    this.connect();
   }
 
-  // connect mongoose to mongodb
-  #connect() {
-    mongoose.set("strictQuery", false);
+  // connect sequelize to mysql
+  connect() {
     try {
-      mongoose.connect(MONGO_DB_URI);
-    } catch (err) {
-      console.log(err);
+      sequelize.authenticate();
+      console.log('Connection to the database has been established successfully.');
+    } catch (error) {
+      console.error('Unable to connect to the database:', error);
     }
   }
 
@@ -25,35 +57,20 @@ export class Article {
       return { success: false, msg: authObject.msg };
     }
 
-    const elements = (await ArticleModel.find({})).map(elem => {
-      return {
-        __v: undefined,
-        ...elem
-      };
-    });
-    var labels = [];
-    for (var i = 1; i <= numberOfPastMonths; i++) {
+    const elements = await ArticleModel.findAll();
+    const labels = [];
+    for (let i = 1; i <= numberOfPastMonths; i++) {
       const date = new Date();
       date.setMonth(date.getMonth() - i);
-      const currentLabel = date
-        .toLocaleString("en-US", { month: "short" })
-        .toUpperCase();
+      const currentLabel = date.toLocaleString("en-US", { month: "short" }).toUpperCase();
       labels.push(currentLabel);
     }
-    var data = [];
+    const data = [];
     for (const label of labels) {
-      var numberOfItems = 0;
+      let numberOfItems = 0;
       for (const elem of elements) {
-        if (!elem.publishDate) {
-          continue;
-        }
-
-        if (
-          elem.publishDate
-            .toLocaleString("en-US", { month: "short" })
-            .toUpperCase() === label
-        ) {
-          numberOfItems = numberOfItems + 1;
+        if (elem.publishDate && elem.publishDate.toLocaleString("en-US", { month: "short" }).toUpperCase() === label) {
+          numberOfItems++;
         }
       }
       data.push(numberOfItems);
@@ -71,8 +88,7 @@ export class Article {
     if (!authObject.success) {
       return { success: false, msg: authObject.msg };
     }
-
-    const elements = await ArticleModel.find({});
+    const elements = await ArticleModel.findAll();
     return { success: true, elements: elements };
   }
 
@@ -81,11 +97,11 @@ export class Article {
     if (!authObject.success) {
       return { success: false, msg: authObject.msg };
     }
-    const element = await ArticleModel.findById(id);
+    const element = await ArticleModel.findByPk(id);
     if (!element) {
       return { success: false, msg: "Element not found by given id" };
     }
-    return { success: true, elements: element };
+    return { success: true, element: element };
   }
 
   async create(token, title, content, publishDate, createdBy, tags, status) {
@@ -93,36 +109,26 @@ export class Article {
     if (!authObject.success) {
       return { success: false, msg: authObject.msg };
     }
-    if (
-      title == null ||
-      content == null ||
-      publishDate == null ||
-      createdBy == null ||
-      status == null
-    ) {
-      return { success: false, msg: "required fields are empty" };
+    if (!title || !content || !publishDate || !createdBy || !status) {
+      return { success: false, msg: "Required fields are empty" };
     }
-    const newObj = await ArticleModel.create({
-      title: title,
-      content: content,
-      publishDate: publishDate,
-      createdBy: createdBy,
-      tags: tags,
-      status: status
-    });
-    return { success: true, elemId: newObj._id };
+    try {
+      const newObj = await ArticleModel.create({
+        title: title,
+        content: content,
+        publishDate: publishDate,
+        createdBy: createdBy,
+        tags: tags,
+        status: status
+      });
+      return { success: true, elemId: newObj.id };
+    } catch (error) {
+      console.error("Error creating article:", error);
+      return { success: false, msg: "Error creating article" };
+    }
   }
 
-  async update(
-    token,
-    id,
-    title,
-    content,
-    publishDate,
-    createdBy,
-    tags,
-    status
-  ) {
+  async update(token, id, title, content, publishDate, createdBy, tags, status) {
     const authObject = await reqAuth(token);
     if (!authObject.success) {
       return { success: false, msg: authObject.msg };
@@ -130,38 +136,24 @@ export class Article {
     if (!id) {
       return { success: false, msg: "Required fields are empty" };
     }
-    const dataToSet = {};
-
-    if (title != null) {
-      dataToSet.title = title;
+    try {
+      const article = await ArticleModel.findByPk(id);
+      if (!article) {
+        return { success: false, msg: "Article not found" };
+      }
+      await article.update({
+        title: title,
+        content: content,
+        publishDate: publishDate,
+        createdBy: createdBy,
+        tags: tags,
+        status: status
+      });
+      return { success: true };
+    } catch (error) {
+      console.error("Error updating article:", error);
+      return { success: false, msg: "Error updating article" };
     }
-
-    if (content != null) {
-      dataToSet.content = content;
-    }
-
-    if (publishDate != null) {
-      dataToSet.publishDate = publishDate;
-    }
-
-    if (createdBy != null) {
-      dataToSet.createdBy = createdBy;
-    }
-
-    if (tags != null) {
-      dataToSet.tags = tags;
-    }
-
-    if (status != null) {
-      dataToSet.status = status;
-    }
-
-    const newValues = { $set: dataToSet };
-    const item = await ArticleModel.updateOne({ _id: id }, newValues);
-    if (!item) {
-      return { success: false, msg: "Element does not exists" };
-    }
-    return { success: true };
   }
 
   async delete(token, id) {
@@ -172,7 +164,16 @@ export class Article {
     if (!id) {
       return { success: false, msg: "Required fields are empty" };
     }
-    await ArticleModel.deleteMany({ _id: id });
-    return { success: true };
+    try {
+      const article = await ArticleModel.findByPk(id);
+      if (!article) {
+        return { success: false, msg: "Article not found" };
+      }
+      await article.destroy();
+      return { success: true };
+    } catch (error) {
+      console.error("Error deleting article:", error);
+      return { success: false, msg: "Error deleting article" };
+    }
   }
 }

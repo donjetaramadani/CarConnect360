@@ -1,23 +1,28 @@
-import { Schema, model } from "mongoose";
-const brandsSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from "../database";
+
+// Define the Brand model
+const Brand = sequelize.define('Brand', {
   name: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   description: {
-    type: String,
-    required: false,
+    type: DataTypes.STRING,
+    allowNull: true,
   },
   photoLink: {
-    type: String,
-    required: false,
+    type: DataTypes.STRING,
+    allowNull: true,
   },
   websiteLink: {
-    type: String,
-    required: false,
+    type: DataTypes.STRING,
+    allowNull: true,
   },
 });
 
-const brands = model("brands", brandsSchema);
+// Synchronize the model with the database
+Brand.sync();
 
-export default brands;
+// Export the Brand model
+export default Brand;

@@ -1,23 +1,69 @@
-import mongoose from "mongoose";
+import { DataTypes } from 'sequelize';
+import sequelize from './database';
 import bcrypt from "bcryptjs";
 import Jwt from "jsonwebtoken";
 import UserModel from "./models/users";
 import ActiveSession from "./models/activeSession";
-import { MONGO_DB_URI, secret, smtpConf } from "./config";
+import { secret, smtpConf } from "./config";
 import reqAuth from "./middleware/reqAuth";
 import nodemailer from "nodemailer";
-export class User {
+
+// Define the User model
+const User = sequelize.define('User', {
+  name: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  email: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true,
+    validate: {
+      isEmail: true,
+    },
+  },
+  password: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  userType: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  gender: {
+    type: DataTypes.STRING,
+    defaultValue: null,
+  },
+  phoneNumber: {
+    type: DataTypes.STRING,
+    defaultValue: null,
+  },
+  city: {
+    type: DataTypes.STRING,
+    defaultValue: null,
+  },
+  country: {
+    type: DataTypes.STRING,
+    defaultValue: null,
+  },
+});
+
+// Synchronize the model with the database
+User.sync();
+
+// Export the User class
+export default class UserService {
   constructor() {
-    this.#connect();
+    this.connect();
   }
 
-  // connect mongoose to mongodb
-  #connect() {
-    mongoose.set("strictQuery", false);
+  // Connect sequelize to MySQL
+  async connect() {
     try {
-      mongoose.connect(MONGO_DB_URI);
-    } catch (err) {
-      console.log(err);
+      await sequelize.authenticate();
+      console.log('Connection to the database has been established successfully.');
+    } catch (error) {
+      console.error('Unable to connect to the database:', error);
     }
   }
 

@@ -1,11 +1,16 @@
-import { Schema, model } from "mongoose";
-const countriesSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from "../database";
+
+// Define the Country model
+const Country = sequelize.define('Country', {
   name: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
 });
 
-const countries = model("countries", countriesSchema);
+// Synchronize the model with the database
+Country.sync();
 
-export default countries;
+// Export the Country model
+export default Country;

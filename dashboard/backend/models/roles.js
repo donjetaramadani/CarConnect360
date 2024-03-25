@@ -1,15 +1,20 @@
-import { Schema, model } from "mongoose";
-const rolesSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from "../database";
+
+// Define the Role model
+const Role = sequelize.define('Role', {
   title: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   description: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
 });
 
-const roles = model("roles", rolesSchema);
+// Synchronize the model with the database
+Role.sync();
 
-export default roles;
+// Export the Role model
+export default Role;

@@ -1,15 +1,20 @@
-import { Schema, model } from "mongoose";
-const reviewsSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from "../database";
+
+// Define the Review model
+const Review = sequelize.define('Review', {
   stars: {
-    type: Number,
-    required: true,
+    type: DataTypes.INTEGER,
+    allowNull: false,
   },
   description: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
 });
 
-const reviews = model("reviews", reviewsSchema);
+// Synchronize the model with the database
+Review.sync();
 
-export default reviews;
+// Export the Review model
+export default Review;

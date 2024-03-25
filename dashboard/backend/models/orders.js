@@ -1,27 +1,45 @@
-import { Schema, model } from "mongoose";
-const ordersSchema = new Schema({
-  clientId: {
-    type: String,
-    required: true,
-  },
-  productIds: {
-    type: [String],
-    required: true,
-  },
-  price: {
-    type: Number,
-    required: true,
-  },
-  status: {
-    type: String,
-    required: true,
-  },
-  date: {
-    type: Date,
-    required: true,
-  },
-});
+import { DataTypes, Model } from 'sequelize';
+import { sequelize } from './database.js';
 
-const orders = model("orders", ordersSchema);
+class Order extends Model {}
 
-export default orders;
+Order.init(
+  {
+    clientId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    productIds: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    price: {
+      type: DataTypes.FLOAT,
+      allowNull: false,
+    },
+    status: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    date: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: DataTypes.NOW,
+    },
+  },
+  {
+    sequelize,
+    modelName: 'Order',
+  }
+);
+
+(async () => {
+  try {
+    await sequelize.sync();
+    console.log('Order model synchronized with database.');
+  } catch (error) {
+    console.error('Error synchronizing Order model:', error);
+  }
+})();
+
+export default Order;

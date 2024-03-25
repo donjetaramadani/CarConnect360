@@ -1,31 +1,36 @@
-import { Schema, model } from "mongoose";
-const tasksSchema = new Schema({
+import { DataTypes } from 'sequelize';
+import { sequelize } from './database.js';
+
+// Define the Task model
+const Task = sequelize.define('Task', {
   title: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   description: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   dueDate: {
-    type: Date,
-    required: true,
+    type: DataTypes.DATE,
+    allowNull: false,
   },
   assignedTo: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   madeBy: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   status: {
-    type: String,
-    required: true,
+    type: DataTypes.STRING,
+    allowNull: false,
   },
 });
 
-const tasks = model("tasks", tasksSchema);
+// Synchronize the model with the database
+Task.sync();
 
-export default tasks;
+// Export the Task model
+export default Task;

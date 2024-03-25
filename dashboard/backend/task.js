@@ -1,21 +1,52 @@
-import mongoose from "mongoose";
-import TaskModel from "./models/tasks";
-import { MONGO_DB_URI } from "./config";
+import { DataTypes } from 'sequelize';
+import sequelize from './database';
 import reqAuth from "./middleware/reqAuth";
-import { listDate } from "./utils/constants";
 
-export class Task {
+// Define the Task model
+const Task = sequelize.define('Task', {
+  title: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  description: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  dueDate: {
+    type: DataTypes.DATE,
+    allowNull: false,
+    defaultValue: DataTypes.NOW,
+  },
+  assignedTo: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  madeBy: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  status: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+});
+
+// Synchronize the model with the database
+Task.sync();
+
+// Export the Task class
+export default class TaskService {
   constructor() {
-    this.#connect();
+    this.connect();
   }
 
-  // connect mongoose to mongodb
-  #connect() {
-    mongoose.set("strictQuery", false);
+  // Connect sequelize to MySQL
+  async connect() {
     try {
-      mongoose.connect(MONGO_DB_URI);
-    } catch (err) {
-      console.log(err);
+      await sequelize.authenticate();
+      console.log('Connection to the database has been established successfully.');
+    } catch (error) {
+      console.error('Unable to connect to the database:', error);
     }
   }
 
