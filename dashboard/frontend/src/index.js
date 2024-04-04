@@ -30,6 +30,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import ThemeContextWrapper from "./components/ThemeWrapper/ThemeWrapper";
 import BackgroundColorWrapper from "./components/BackgroundColorWrapper/BackgroundColorWrapper";
+import Login from "views/Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -42,6 +43,7 @@ root.render(
           <Route path="/rtl" render={(props) => <RTLLayout {...props} />} />
           <Route path="/auth" render={(props) => <AuthLayout {...props} />} />
           <Redirect from="/" to="/auth/login" />
+
         </Switch>
       </BrowserRouter>
     </BackgroundColorWrapper>

@@ -82,7 +82,7 @@ function AdminNavbar(props) {
       localStorage.getItem("user") != null
     ) {
       localStorage.clear();
-      history.push("/auth/login");
+      history.push(process.env.REACT_APP_BACKEND_URL +"/auth/login");
       return;
     };
   }

@@ -29,34 +29,31 @@ function Login(props) {
 
   async function handleSubmit(event) {
     setError(null);
-
     event.preventDefault();
+
     if (!email || !password) {
       setError("All fields are mandatory");
-      console.log("All fields are mandatory");
       return;
     }
 
     setIsSubmitting(true);
 
-    const res = await User.login(email, password).catch(err => {
-      setError(err.msg);
-      console.log(err.error);
+    try {
+      const res = await User.login(email, password);
+      if (!res.success) {
+        setError(res.msg);
+      } else {
+        localStorage.setItem("apiToken", res.token);
+        localStorage.setItem("user", JSON.stringify(res.user));
+        history.push("/admin/dashboard");
+      }
+    } catch (error) {
+      setError("An error occurred during login.");
+    } finally {
       setIsSubmitting(false);
-      return;
-    });
-    setIsSubmitting(false);
-    if (!res.success) {
-      setError(res.msg);
-      console.log(res.msg);
-      return;
-    } else {
-      localStorage.setItem("apiToken", res.token);
-      localStorage.setItem("user", JSON.stringify(res.user));
-      history.push("/admin/dashboard");
     }
   }
-
+  
   return (
     <div>
       <Col className="ml-auto mr-auto col-md-6 col-lg-4">

@@ -6,7 +6,7 @@
   import { Remote } from "./remote.js"
   
   export class Article {
-      static remote = new Remote("http://127.0.0.1:8083/Article")
+      static remote = new Remote(process.env.REACT_APP_BACKEND_URL + "/Article")
   
       static async getChartData(token) {
           return Article.remote.call("Article.getChartData", token)  

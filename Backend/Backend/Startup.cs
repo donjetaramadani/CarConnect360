@@ -22,7 +22,9 @@ namespace Backend
 
         public void ConfigureServices(IServiceCollection services)
         {
-            // Ensure connectionString is not null before passing it to UseSqlServer
+          
+
+  // Ensure connectionString is not null before passing it to UseSqlServer
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
             if (connectionString != null)
             {
@@ -70,37 +72,52 @@ namespace Backend
 
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                // Enable HTTPS redirection and HSTS only in development
-                app.UseHttpsRedirection();
-                app.UseHsts(); // HTTP Strict Transport Security (HSTS)
-            }
-            else
-            {
-                // Use exception handler middleware for non-development environments
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts(); // HTTP Strict Transport Security (HSTS)
-            }
+{
+    if (env.IsDevelopment())
+    {
+        app.UseDeveloperExceptionPage();
+    }
+    else
+    {
+        app.UseExceptionHandler("/Home/Error");
+        app.UseHsts();
+    }
 
-            app.UseStaticFiles();
+    app.UseHttpsRedirection();
+    app.UseStaticFiles();
 
-            app.UseRouting();
+    app.UseRouting();
 
-            app.UseAuthentication();
-            app.UseAuthorization();
+    app.UseAuthentication();
+    app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
-        }
+    // Define all routes within a single UseEndpoints call
+    app.UseEndpoints(endpoints =>
+    {
+        // Map login route
+        endpoints.MapControllerRoute(
+            name: "login",
+            pattern: "/Account/Login",
+            defaults: new { controller = "Account", action = "Login" });
+
+        // Map register route
+        endpoints.MapControllerRoute(
+            name: "register",
+            pattern: "/Account/Register",
+            defaults: new { controller = "Account", action = "Register" });
+
+        // Default route
+        endpoints.MapControllerRoute(
+            name: "default",
+            pattern: "{controller=Home}/{action=Index}/{id?}");
+    });
+}
+
+
     }
 }

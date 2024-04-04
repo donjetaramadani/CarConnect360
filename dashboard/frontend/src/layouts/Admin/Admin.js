@@ -48,22 +48,31 @@ function Admin(props) {
     document.documentElement.className.indexOf("nav-open") !== -1
   );
   React.useEffect(() => {
+    async function checkToken() {
+      try {
+        const res = await User.getUserByToken(localStorage.getItem("apiToken"), process.env.REACT_APP_BACKEND_URL);
+        if (!res || !res.success) {
+          localStorage.clear();
+          history.push("/auth/login");
+        }
+      } catch (error) {
+        console.error("Error while checking token:", error);
+        localStorage.clear();
+        history.push("/auth/login");
+      }
+    }
+  
     if (
       localStorage.getItem("apiToken") === null ||
       localStorage.getItem("user") === null
     ) {
       localStorage.clear();
       history.push("/auth/login");
+    } else {
+      checkToken();
     }
-    async function checkToken() {
-      const res = await User.getUserByToken(localStorage.getItem("apiToken"));
-      if (!res || !res.success) {
-        localStorage.clear();
-        history.push("/auth/login");
-      }
-    }
-    checkToken();
-  });
+  }, [history]);
+  
   React.useEffect(() => {
     if (navigator.platform.indexOf("Win") > -1) {
       document.documentElement.className += " perfect-scrollbar-on";
@@ -134,7 +143,7 @@ function Admin(props) {
             <Sidebar
               routes={routes}
               logo={{
-                outterLink: "https://www.creative-tim.com/",
+                outterLink: process.env.REACT_APP_BACKEND_URL || "https://www.creative-tim.com/",
                 text: "Creative Tim",
                 imgSrc: logo,
               }}

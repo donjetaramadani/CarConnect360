@@ -4,9 +4,12 @@
 */
    
   import { Remote } from "./remote.js"
-  
+
+  const backendUrl = 'http://localhost:5100'; 
+
+
   export class User {
-      static remote = new Remote("http://127.0.0.1:8083/User")
+      static remote = new Remote(backendUrl + "/User")
   
       static async create(name, email, password, userType, gender, phoneNumber, city, country) {
           return User.remote.call("User.create", name, email, password, userType, gender, phoneNumber, city, country)  
