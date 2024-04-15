@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Core",
+    "\\Core\\Interfaces",
+    "\\Core\\Services"
+  ],
+  "SelectedNode": "\\Core\\Services\\LogService.cs",
+  "PreviewInSolutionExplorer": false
+}
