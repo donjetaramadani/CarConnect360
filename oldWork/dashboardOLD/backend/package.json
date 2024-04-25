@@ -1,0 +1,28 @@
+{
+  "name": "ui-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "genezio": "^0.1.10",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.8.0",
+    "mysql2": "^3.9.2",
+    "nodemailer": "^6.8.0",
+    "sequelize": "^6.37.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "babel-jest": "^29.7.0"
+  }
+}
