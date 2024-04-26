@@ -20,6 +20,12 @@ import LoginPage from '../pages/public/LoginPage';
 import NotFoundPage from '../pages/public/NotFoundPage';
 import RegisterPage from '../pages/public/RegisterPage';
 import UnauthorizedPage from '../pages/public/UnauthorizedPage';
+import DiellaPage from '../pages/dashboard/DiellaPage';
+import DiellasPage from '../pages/dashboard/DiellasPage';
+import FatimePage from '../pages/dashboard/FatimePage';
+import FatimesPage from '../pages/dashboard/FatimesPage';
+import AdeaPage from '../pages/dashboard/AdeaPage';
+import AdeasPage from '../pages/dashboard/AdeasPage';
 
 const GlobalRouter = () => {
   return (
@@ -40,6 +46,12 @@ const GlobalRouter = () => {
           <Route path={PATH_DASHBOARD.inbox} element={<InboxPage />} />
           <Route path={PATH_DASHBOARD.myLogs} element={<MyLogsPage />} />
           <Route path={PATH_DASHBOARD.user} element={<UserPage />} />
+          <Route path={PATH_DASHBOARD.Diella} element={<DiellaPage/>} />
+          <Route path={PATH_DASHBOARD.Diellas} element={<DiellasPage/>} />
+          <Route path={PATH_DASHBOARD.Fatime} element={<FatimePage/>} />
+          <Route path={PATH_DASHBOARD.Fatimes} element={<FatimesPage/>} />
+          <Route path={PATH_DASHBOARD.Adea} element={<AdeaPage/>} />
+          <Route path={PATH_DASHBOARD.Adeas} element={<AdeasPage/>} />
         </Route>
         <Route element={<AuthGuard roles={managerAccessRoles} />}>
           <Route path={PATH_DASHBOARD.manager} element={<ManagerPage />} />

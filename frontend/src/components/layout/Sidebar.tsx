@@ -48,6 +48,47 @@ const Sidebar = () => {
         variant='secondary'
       />
       <Button label='My Logs' onClick={() => handleClick(PATH_DASHBOARD.myLogs)} type='button' variant='secondary' />
+
+      <Button
+        label='DiellaPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Diella)}
+        type='button'
+        variant='secondary'
+      />
+      <Button
+        label='DiellasPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Diellas)}
+        type='button'
+        variant='secondary'
+      />
+
+      <Button
+        label='FatimePage'
+        onClick={() => handleClick(PATH_DASHBOARD.Fatime)}
+        type='button'
+        variant='secondary'
+      />
+      <Button
+        label='FatimesPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Fatimes)}
+        type='button'
+        variant='secondary'
+      />
+
+      <Button
+        label='AdeaPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Adea)}
+        type='button'
+        variant='secondary'
+      />
+      <Button
+        label='AdeasPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Adeas)}
+        type='button'
+        variant='secondary'
+      />
+
+
       <hr />
       <Button label='Owner Page' onClick={() => handleClick(PATH_DASHBOARD.owner)} type='button' variant='secondary' />
       <Button label='Admin Page' onClick={() => handleClick(PATH_DASHBOARD.admin)} type='button' variant='secondary' />
