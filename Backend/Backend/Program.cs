@@ -4,6 +4,7 @@ using backend.Core.DbContext;
 using backend.Core.Entities;
 using backend.Core.Interfaces;
 using backend.Core.Services;
+using backend.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +31,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<ILogServices, LogService>();
 builder.Services.AddScoped<IMessageService, MessageService>();
 builder.Services.AddScoped<IAuthServices, AuthServices>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ISupplierService, SupplierService>(); 
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 // Add Identity
 builder.Services
@@ -49,6 +53,7 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.SignIn.RequireConfirmedEmail = false;
     options.SignIn.RequireConfirmedPhoneNumber = false;
 });
+
 
 // Add AuthenticationSchema and JwtBearer
 builder.Services

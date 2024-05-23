@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using backend.Models;
 
 namespace backend.Core.DbContext
 {
@@ -11,6 +12,12 @@ namespace backend.Core.DbContext
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
+
+        // DbSet properties for inventory system
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
+
 
         public DbSet<Log> Logs { get; set; }
         public DbSet<Message> Messages { get; set; }
@@ -54,6 +61,28 @@ namespace backend.Core.DbContext
             builder.Entity<IdentityUserRole<string>>(e =>
             {
                 e.ToTable("UserRoles");
+            });
+
+            // Configurations for the inventory system
+            builder.Entity<Product>(e =>
+            {
+                e.ToTable("Products"); // Table name
+                e.HasKey(p => p.Id); // Primary key
+                // Add more configurations as needed
+            });
+
+            builder.Entity<Category>(e =>
+            {
+                e.ToTable("Categories"); // Table name
+                e.HasKey(c => c.Id); // Primary key
+                // Add more configurations as needed
+            });
+
+            builder.Entity<Supplier>(e =>
+            {
+                e.ToTable("Suppliers"); // Table name
+                e.HasKey(s => s.Id); // Primary key
+                // Add more configurations as needed
             });
         }
     }

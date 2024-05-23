@@ -88,6 +88,26 @@ const Sidebar = () => {
         variant='secondary'
       />
 
+      <Button
+        label='DonjetaPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Donjeta)}
+        type='button'
+        variant='secondary'
+      />
+      <Button
+        label='DonjetasPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Donjetas)}
+        type='button'
+        variant='secondary'
+      />
+
+      <Button
+        label='ProductListPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Product)}
+        type='button'
+        variant='secondary'
+      />
+
 
       <hr />
       <Button label='Owner Page' onClick={() => handleClick(PATH_DASHBOARD.owner)} type='button' variant='secondary' />

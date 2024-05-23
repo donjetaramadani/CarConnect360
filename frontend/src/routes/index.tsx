@@ -26,6 +26,9 @@ import FatimePage from '../pages/dashboard/FatimePage';
 import FatimesPage from '../pages/dashboard/FatimesPage';
 import AdeaPage from '../pages/dashboard/AdeaPage';
 import AdeasPage from '../pages/dashboard/AdeasPage';
+import DonjetasPage from '../pages/dashboard/DonjetasPage';
+import DonjetaPage from '../pages/dashboard/DonjetaPage';
+import ProductListPage from '../pages/dashboard/ProductListPage';
 
 const GlobalRouter = () => {
   return (
@@ -52,6 +55,9 @@ const GlobalRouter = () => {
           <Route path={PATH_DASHBOARD.Fatimes} element={<FatimesPage/>} />
           <Route path={PATH_DASHBOARD.Adea} element={<AdeaPage/>} />
           <Route path={PATH_DASHBOARD.Adeas} element={<AdeasPage/>} />
+          <Route path={PATH_DASHBOARD.Donjeta} element={<DonjetasPage/>} />
+          <Route path={PATH_DASHBOARD.Donjetas} element={<DonjetaPage/>} />
+          <Route path={PATH_DASHBOARD.Product} element={<ProductListPage/>} />
         </Route>
         <Route element={<AuthGuard roles={managerAccessRoles} />}>
           <Route path={PATH_DASHBOARD.manager} element={<ManagerPage />} />
