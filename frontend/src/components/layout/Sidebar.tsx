@@ -76,14 +76,21 @@ const Sidebar = () => {
       />
 
       <Button
-        label='AdeaPage'
-        onClick={() => handleClick(PATH_DASHBOARD.Adea)}
+        label='BookingListPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Booking)}
         type='button'
         variant='secondary'
       />
       <Button
-        label='AdeasPage'
-        onClick={() => handleClick(PATH_DASHBOARD.Adeas)}
+        label='CustomerListPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Customer)}
+        type='button'
+        variant='secondary'
+          />
+
+      <Button
+        label='PaymentListPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Payment)}
         type='button'
         variant='secondary'
       />

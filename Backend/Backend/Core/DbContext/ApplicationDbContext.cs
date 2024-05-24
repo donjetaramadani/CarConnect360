@@ -17,7 +17,9 @@ namespace backend.Core.DbContext
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
-
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Booking> Bookings { get; set; }
+        public DbSet<Payment> Payments { get; set; }
 
         public DbSet<Log> Logs { get; set; }
         public DbSet<Message> Messages { get; set; }
@@ -82,6 +84,27 @@ namespace backend.Core.DbContext
             {
                 e.ToTable("Suppliers"); // Table name
                 e.HasKey(s => s.Id); // Primary key
+                // Add more configurations as needed
+            });
+
+            builder.Entity<Customer>(e =>
+            {
+                e.ToTable("Customers"); // Table name
+                e.HasKey(c => c.Id); // Primary key
+                // Add more configurations as needed
+            });
+
+            builder.Entity<Booking>(e =>
+            {
+                e.ToTable("Bookings"); // Table name
+                e.HasKey(b => b.Id); // Primary key
+                // Add more configurations as needed
+            });
+
+            builder.Entity<Payment>(e =>
+            {
+                e.ToTable("Payments"); // Table name
+                e.HasKey(p => p.Id); // Primary key
                 // Add more configurations as needed
             });
         }

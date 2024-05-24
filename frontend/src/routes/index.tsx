@@ -24,8 +24,9 @@ import DiellaPage from '../pages/dashboard/DiellaPage';
 import DiellasPage from '../pages/dashboard/DiellasPage';
 import FatimePage from '../pages/dashboard/FatimePage';
 import FatimesPage from '../pages/dashboard/FatimesPage';
-import AdeaPage from '../pages/dashboard/AdeaPage';
-import AdeasPage from '../pages/dashboard/AdeasPage';
+import BookingListPage from '../pages/dashboard/BookingListPage';
+import CustomerListPage from '../pages/dashboard/CustomerListPage';
+import PaymentListPage from '../pages/dashboard/PaymentListPage';
 import DonjetasPage from '../pages/dashboard/DonjetasPage';
 import DonjetaPage from '../pages/dashboard/DonjetaPage';
 import ProductListPage from '../pages/dashboard/ProductListPage';
@@ -53,8 +54,9 @@ const GlobalRouter = () => {
           <Route path={PATH_DASHBOARD.Diellas} element={<DiellasPage/>} />
           <Route path={PATH_DASHBOARD.Fatime} element={<FatimePage/>} />
           <Route path={PATH_DASHBOARD.Fatimes} element={<FatimesPage/>} />
-          <Route path={PATH_DASHBOARD.Adea} element={<AdeaPage/>} />
-          <Route path={PATH_DASHBOARD.Adeas} element={<AdeasPage/>} />
+          <Route path={PATH_DASHBOARD.Booking} element={<BookingListPage/>} />
+          <Route path={PATH_DASHBOARD.Customer} element={<CustomerListPage />} />
+          <Route path={PATH_DASHBOARD.Payment} element={<PaymentListPage />} />
           <Route path={PATH_DASHBOARD.Donjeta} element={<DonjetasPage/>} />
           <Route path={PATH_DASHBOARD.Donjetas} element={<DonjetaPage/>} />
           <Route path={PATH_DASHBOARD.Product} element={<ProductListPage/>} />

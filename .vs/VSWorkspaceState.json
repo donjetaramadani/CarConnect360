@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Backend",
+    "\\Backend\\Backend",
+    "\\Backend\\Backend\\Controllers",
+    "\\Backend\\Backend\\Models",
+    "\\frontend",
+    "\\frontend\\src",
+    "\\frontend\\src\\components",
+    "\\frontend\\src\\components\\dashboard",
+    "\\frontend\\src\\components\\dashboard\\payment"
+  ],
+  "SelectedNode": "\\Backend\\Backend\\Models\\Payment.cs",
+  "PreviewInSolutionExplorer": false
+}
