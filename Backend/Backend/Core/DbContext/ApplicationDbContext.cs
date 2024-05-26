@@ -107,6 +107,18 @@ namespace backend.Core.DbContext
                 e.HasKey(p => p.Id); // Primary key
                 // Add more configurations as needed
             });
+
+            builder.Entity<Accessory>(e =>
+            {
+                e.ToTable("Accessories");
+                e.HasKey(async => async.Id);
+            });
+            
+            builder.Entity<Appointment>(e =>
+            {
+                e.ToTable("Appointments"); 
+                e.HasKey(a => a.Id); 
+            });
         }
     }
 }
