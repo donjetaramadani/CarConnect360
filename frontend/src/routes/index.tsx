@@ -20,8 +20,8 @@ import LoginPage from '../pages/public/LoginPage';
 import NotFoundPage from '../pages/public/NotFoundPage';
 import RegisterPage from '../pages/public/RegisterPage';
 import UnauthorizedPage from '../pages/public/UnauthorizedPage';
-import DiellaPage from '../pages/dashboard/DiellaPage';
-import DiellasPage from '../pages/dashboard/DiellasPage';
+import AccessoriesListPage from '../pages/dashboard/AccessoriesListPage';
+import AppointmentListPage from '../pages/dashboard/AppointmentListPage';
 import FatimePage from '../pages/dashboard/FatimePage';
 import FatimesPage from '../pages/dashboard/FatimesPage';
 import BookingListPage from '../pages/dashboard/BookingListPage';
@@ -50,8 +50,8 @@ const GlobalRouter = () => {
           <Route path={PATH_DASHBOARD.inbox} element={<InboxPage />} />
           <Route path={PATH_DASHBOARD.myLogs} element={<MyLogsPage />} />
           <Route path={PATH_DASHBOARD.user} element={<UserPage />} />
-          <Route path={PATH_DASHBOARD.Diella} element={<DiellaPage/>} />
-          <Route path={PATH_DASHBOARD.Diellas} element={<DiellasPage/>} />
+          <Route path={PATH_DASHBOARD.Appointment} element={<AppointmentListPage/>} />
+          <Route path={PATH_DASHBOARD.accessories} element={<AccessoriesListPage/>} />
           <Route path={PATH_DASHBOARD.Fatime} element={<FatimePage/>} />
           <Route path={PATH_DASHBOARD.Fatimes} element={<FatimesPage/>} />
           <Route path={PATH_DASHBOARD.Booking} element={<BookingListPage/>} />
