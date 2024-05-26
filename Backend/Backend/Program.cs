@@ -37,6 +37,8 @@ builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
+builder.Services.AddScoped<IAppointmentService, AppointmentService>(); 
+builder.Services.AddScoped<IAccessoryService, AccessoryService>(); 
 
 // Add Identity
 builder.Services
