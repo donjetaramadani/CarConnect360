@@ -31,6 +31,54 @@ namespace backend.Controllers
             }
         }
 
-        // Implement other CRUD operations as needed
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteCategory(int id)
+        {
+            try
+            {
+                var result = await _categoryService.DeleteCategoryAsync(id);
+                if (result)
+                {
+                    return Ok("Category deleted successfully");
+                }
+                else
+                {
+                    return NotFound("Category not found");
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetCategories()
+        {
+            try
+            {
+                var categories = await _categoryService.GetCategoriesAsync();
+                return Ok(categories);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        [HttpGet("history")]
+        public async Task<IActionResult> GetCategoryHistory()
+        {
+            try
+            {
+                var categoryHistory = await _categoryService.GetCategoryHistoryAsync();
+                return Ok(categoryHistory);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+        // Implement other CRUD operations like GET, PUT, etc.
     }
 }

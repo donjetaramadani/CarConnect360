@@ -17,7 +17,7 @@ namespace backend.Core.DbContext
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
-
+        public DbSet<Invoice> Invoices { get; set; }
 
         public DbSet<Log> Logs { get; set; }
         public DbSet<Message> Messages { get; set; }
@@ -84,6 +84,17 @@ namespace backend.Core.DbContext
                 e.HasKey(s => s.Id); // Primary key
                 // Add more configurations as needed
             });
+
+            builder.Entity<Invoice>(e =>
+            {
+                e.ToTable("Invoices"); // Table name
+                e.HasKey(i => i.Id); // Primary key
+                e.Property(i => i.Amount)
+                    .HasColumnType("decimal(18,2)"); // Specify precision and scale
+                                                     // Add more configurations as needed
+            });
+
+         
         }
     }
 }

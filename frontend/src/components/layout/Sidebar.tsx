@@ -89,26 +89,34 @@ const Sidebar = () => {
       />
 
       <Button
-        label='DonjetaPage'
-        onClick={() => handleClick(PATH_DASHBOARD.Donjeta)}
-        type='button'
-        variant='secondary'
-      />
-      <Button
-        label='DonjetasPage'
-        onClick={() => handleClick(PATH_DASHBOARD.Donjetas)}
-        type='button'
-        variant='secondary'
-      />
-
-      <Button
         label='ProductListPage'
         onClick={() => handleClick(PATH_DASHBOARD.Product)}
         type='button'
         variant='secondary'
       />
 
+      <Button
+        label='CategoryListPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Category)}
+        type='button'
+        variant='secondary'
+      />
 
+      <Button
+        label='SupplierListPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Supplier)}
+        type='button'
+        variant='secondary'
+      />
+
+
+      <Button
+        label='InvoiceListPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Invoice)}
+        type='button'
+        variant='secondary'
+      />
+      
       <hr />
       <Button label='Owner Page' onClick={() => handleClick(PATH_DASHBOARD.owner)} type='button' variant='secondary' />
       <Button label='Admin Page' onClick={() => handleClick(PATH_DASHBOARD.admin)} type='button' variant='secondary' />

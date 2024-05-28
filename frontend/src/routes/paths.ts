@@ -1,3 +1,5 @@
+import CategoryScreen from "../pages/dashboard/CategoryScreen";
+
 export const PATH_PUBLIC = {
   home: '/',
   register: '/register',
@@ -21,11 +23,13 @@ export const PATH_DASHBOARD = {
   Fatimes: '/dashboard/fatimes',
   Adea: '/dashboard/adea',
   Adeas: '/dashboard/adeas',
-  Donjeta: '/dashboard/donjeta',
-  Donjetas: '/dashboard/donjetas',
   Product: '/dashboard/product',
+  Supplier: '/dashboard/supplier',
+  Category: '/dashboard/category',
+  Invoice: '/dashboard/invoice',
   owner: '/dashboard/owner',
   admin: '/dashboard/admin',
   manager: '/dashboard/manager',
   user: '/dashboard/user',
+
 };

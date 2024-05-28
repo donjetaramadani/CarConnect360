@@ -40,6 +40,29 @@ namespace backend.Core.Services
             }
         }
 
+        public async Task<IEnumerable<SupplierDto>> GetSupplierHistoryAsync()
+        {
+            try
+            {
+                var supplierHistory = await _dbContext.Suppliers
+                    .OrderByDescending(s => s.Id) // Adjust this based on how you want to order the history
+                    .Select(s => new SupplierDto
+                    {
+                        Id = s.Id,
+                        Name = s.Name,
+                        ContactInformation = s.ContactInformation
+                    })
+                    .ToListAsync();
+
+                return supplierHistory;
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions here
+                throw new Exception("Failed to fetch supplier history", ex);
+            }
+        }
+
         // Implement other CRUD operations as needed
     }
 }
