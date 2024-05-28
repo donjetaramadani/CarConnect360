@@ -50,14 +50,14 @@ const Sidebar = () => {
       <Button label='My Logs' onClick={() => handleClick(PATH_DASHBOARD.myLogs)} type='button' variant='secondary' />
 
       <Button
-        label='DiellaPage'
-        onClick={() => handleClick(PATH_DASHBOARD.Diella)}
+        label='Accessories List Page'
+        onClick={() => handleClick(PATH_DASHBOARD.accessories)}
         type='button'
         variant='secondary'
       />
       <Button
-        label='DiellasPage'
-        onClick={() => handleClick(PATH_DASHBOARD.Diellas)}
+        label='Appointment List Page'
+        onClick={() => handleClick(PATH_DASHBOARD.Appointment)}
         type='button'
         variant='secondary'
       />
@@ -76,14 +76,21 @@ const Sidebar = () => {
       />
 
       <Button
-        label='AdeaPage'
-        onClick={() => handleClick(PATH_DASHBOARD.Adea)}
+        label='BookingListPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Booking)}
         type='button'
         variant='secondary'
       />
       <Button
-        label='AdeasPage'
-        onClick={() => handleClick(PATH_DASHBOARD.Adeas)}
+        label='CustomerListPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Customer)}
+        type='button'
+        variant='secondary'
+          />
+
+      <Button
+        label='PaymentListPage'
+        onClick={() => handleClick(PATH_DASHBOARD.Payment)}
         type='button'
         variant='secondary'
       />

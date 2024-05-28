@@ -9,15 +9,15 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Backend
 build_property.RootNamespace = Backend
-build_property.ProjectDir = C:\Users\donje\OneDrive\Desktop\CarConnect360\Backend\Backend\
+build_property.ProjectDir = C:\Users\Adea\OneDrive\Desktop\CarConnect360\oldWork\BackendOLD\Backend\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\donje\OneDrive\Desktop\CarConnect360\Backend\Backend
+build_property.MSBuildProjectDirectory = C:\Users\Adea\OneDrive\Desktop\CarConnect360\oldWork\BackendOLD\Backend
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/donje/OneDrive/Desktop/CarConnect360/Backend/Backend/Views/Home/Index.cshtml]
+[C:/Users/Adea/OneDrive/Desktop/CarConnect360/oldWork/BackendOLD/Backend/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
