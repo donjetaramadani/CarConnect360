@@ -24,22 +24,11 @@ import AccessoriesListPage from '../pages/dashboard/AccessoriesListPage';
 import AppointmentListPage from '../pages/dashboard/AppointmentListPage';
 import FatimePage from '../pages/dashboard/FatimePage';
 import FatimesPage from '../pages/dashboard/FatimesPage';
-<<<<<<< HEAD
-import AdeaPage from '../pages/dashboard/AdeaPage';
-import AdeasPage from '../pages/dashboard/AdeasPage';
 import ProductScreen from '../pages/dashboard/ProductScreen';
 import SupplierScreen from '../pages/dashboard/SupplierScreen';
 import CategoryScreen from '../pages/dashboard/CategoryScreen';
 import InvoiceScreen from '../pages/dashboard/InvoiceScreen';
 
-=======
-import BookingListPage from '../pages/dashboard/BookingListPage';
-import CustomerListPage from '../pages/dashboard/CustomerListPage';
-import PaymentListPage from '../pages/dashboard/PaymentListPage';
-import DonjetasPage from '../pages/dashboard/DonjetasPage';
-import DonjetaPage from '../pages/dashboard/DonjetaPage';
-import ProductListPage from '../pages/dashboard/ProductListPage';
->>>>>>> 566f6498931de34546a47289caf2abe983b8da0c
 
 const GlobalRouter = () => {
   return (
@@ -64,21 +53,10 @@ const GlobalRouter = () => {
           <Route path={PATH_DASHBOARD.accessories} element={<AccessoriesListPage/>} />
           <Route path={PATH_DASHBOARD.Fatime} element={<FatimePage/>} />
           <Route path={PATH_DASHBOARD.Fatimes} element={<FatimesPage/>} />
-<<<<<<< HEAD
-          <Route path={PATH_DASHBOARD.Adea} element={<AdeaPage/>} />
-          <Route path={PATH_DASHBOARD.Adeas} element={<AdeasPage/>} />
           <Route path={PATH_DASHBOARD.Product} element={<ProductScreen/>} />
           <Route path={PATH_DASHBOARD.Category} element={<CategoryScreen/>} />
           <Route path={PATH_DASHBOARD.Supplier} element={<SupplierScreen/>} />
           <Route path={PATH_DASHBOARD.Invoice} element={<InvoiceScreen/>} />
-=======
-          <Route path={PATH_DASHBOARD.Booking} element={<BookingListPage/>} />
-          <Route path={PATH_DASHBOARD.Customer} element={<CustomerListPage />} />
-          <Route path={PATH_DASHBOARD.Payment} element={<PaymentListPage />} />
-          <Route path={PATH_DASHBOARD.Donjeta} element={<DonjetasPage/>} />
-          <Route path={PATH_DASHBOARD.Donjetas} element={<DonjetaPage/>} />
-          <Route path={PATH_DASHBOARD.Product} element={<ProductListPage/>} />
->>>>>>> 566f6498931de34546a47289caf2abe983b8da0c
         </Route>
         <Route element={<AuthGuard roles={managerAccessRoles} />}>
           <Route path={PATH_DASHBOARD.manager} element={<ManagerPage />} />

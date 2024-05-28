@@ -21,16 +21,6 @@ export const PATH_DASHBOARD = {
   Appointment: '/dashboard/appointment',
   Fatime: '/dashboard/fatime',
   Fatimes: '/dashboard/fatimes',
-<<<<<<< HEAD
-  Adea: '/dashboard/adea',
-  Adeas: '/dashboard/adeas',
-=======
-  Booking: '/dashboard/booking',
-  Customer: '/dashboard/customer',
-  Payment: '/dashboard/payment',
-  Donjeta: '/dashboard/donjeta',
-  Donjetas: '/dashboard/donjetas',
->>>>>>> 566f6498931de34546a47289caf2abe983b8da0c
   Product: '/dashboard/product',
   Supplier: '/dashboard/supplier',
   Category: '/dashboard/category',

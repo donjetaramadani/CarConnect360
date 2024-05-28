@@ -4448,23 +4448,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Adea\\.nuget\\packages\\": {},
+    "C:\\Users\\donje\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adea\\OneDrive\\Desktop\\CarConnect360\\Backend\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "C:\\Users\\Adea\\OneDrive\\Desktop\\CarConnect360\\Backend\\backend\\backend.csproj",
-      "packagesPath": "C:\\Users\\Adea\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adea\\OneDrive\\Desktop\\CarConnect360\\Backend\\backend\\obj\\",
+      "projectPath": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\backend.csproj",
+      "packagesPath": "C:\\Users\\donje\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Adea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\donje\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4543,7 +4543,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

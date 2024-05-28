@@ -13,17 +13,17 @@ namespace backend.Core.DbContext
         {
         }
 
-        // DbSet properties for inventory system
+
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
-<<<<<<< HEAD
+
         public DbSet<Invoice> Invoices { get; set; }
-=======
+
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<Payment> Payments { get; set; }
->>>>>>> 566f6498931de34546a47289caf2abe983b8da0c
+
 
         public DbSet<Log> Logs { get; set; }
         public DbSet<Message> Messages { get; set; }
@@ -91,7 +91,6 @@ namespace backend.Core.DbContext
                 // Add more configurations as needed
             });
 
-<<<<<<< HEAD
             builder.Entity<Invoice>(e =>
             {
                 e.ToTable("Invoices"); // Table name
@@ -101,41 +100,8 @@ namespace backend.Core.DbContext
                                                      // Add more configurations as needed
             });
 
-         
-=======
-            builder.Entity<Customer>(e =>
-            {
-                e.ToTable("Customers"); // Table name
-                e.HasKey(c => c.Id); // Primary key
-                // Add more configurations as needed
-            });
 
-            builder.Entity<Booking>(e =>
-            {
-                e.ToTable("Bookings"); // Table name
-                e.HasKey(b => b.Id); // Primary key
-                // Add more configurations as needed
-            });
 
-            builder.Entity<Payment>(e =>
-            {
-                e.ToTable("Payments"); // Table name
-                e.HasKey(p => p.Id); // Primary key
-                // Add more configurations as needed
-            });
-
-            builder.Entity<Accessory>(e =>
-            {
-                e.ToTable("Accessories");
-                e.HasKey(async => async.Id);
-            });
-            
-            builder.Entity<Appointment>(e =>
-            {
-                e.ToTable("Appointments"); 
-                e.HasKey(a => a.Id); 
-            });
->>>>>>> 566f6498931de34546a47289caf2abe983b8da0c
         }
     }
 }

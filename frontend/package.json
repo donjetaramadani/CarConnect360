@@ -20,14 +20,9 @@
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.51.3",
     "react-hot-toast": "^2.4.1",
-<<<<<<< HEAD
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.3",
     "react-toastify": "^10.0.5",
-=======
-    "react-icons": "^5.2.1",
-    "react-router-dom": "^6.23.1",
->>>>>>> 566f6498931de34546a47289caf2abe983b8da0c
     "reactstrap": "^9.2.2",
     "yup": "^1.4.0"
   },
