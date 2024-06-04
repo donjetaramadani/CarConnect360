@@ -17,5 +17,8 @@ namespace backend.Core.Dtos.Accessory
         [Required]
         [Range(0, double.MaxValue)]
         public decimal Price { get; set; }
+
+        [Required]
+        public int CategoryId { get; set; }
     }
 }

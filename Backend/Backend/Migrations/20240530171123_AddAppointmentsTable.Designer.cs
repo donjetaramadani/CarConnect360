@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.Core.DbContext;
 
@@ -11,9 +12,11 @@ using backend.Core.DbContext;
 namespace backend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240530171123_AddAppointmentsTable")]
+    partial class AddAppointmentsTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -458,7 +461,7 @@ namespace backend.Migrations
 
                     b.HasIndex("CustomerId");
 
-                    b.ToTable("Payments", (string)null);
+                    b.ToTable("Payments");
                 });
 
             modelBuilder.Entity("backend.Models.Product", b =>
@@ -624,7 +627,7 @@ namespace backend.Migrations
             modelBuilder.Entity("backend.Models.Payment", b =>
                 {
                     b.HasOne("backend.Models.Customer", "Customer")
-                        .WithMany("Payments")
+                        .WithMany()
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -672,8 +675,6 @@ namespace backend.Migrations
             modelBuilder.Entity("backend.Models.Customer", b =>
                 {
                     b.Navigation("Appointments");
-
-                    b.Navigation("Payments");
                 });
 
             modelBuilder.Entity("backend.Models.Supplier", b =>

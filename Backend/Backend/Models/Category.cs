@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using backend.Models.backend.Models;
 
 namespace backend.Models
 {
@@ -9,9 +10,9 @@ namespace backend.Models
     public string Name { get; set; }
     public string Description { get; set; }
 
-    // Navigation property
-    public ICollection<Product> Products { get; set; }
-
+        // Navigation property
+        public ICollection<Accessory> Accessories { get; set; }
+        public ICollection<Product> Products { get; set; }
 
     }
 }

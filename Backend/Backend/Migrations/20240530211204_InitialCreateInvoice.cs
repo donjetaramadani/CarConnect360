@@ -1,16 +1,12 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
-
-#nullable disable
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace backend.Migrations
 {
-    /// <inheritdoc />
-    public partial class CreateInvoicesTable : Migration
+    public partial class InitialCreateInvoice : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            // Add your migration code here to create the Invoice table
             migrationBuilder.CreateTable(
                 name: "Invoices",
                 columns: table => new
@@ -28,9 +24,9 @@ namespace backend.Migrations
                 });
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            // Add your migration code here to drop the Invoice table if needed
             migrationBuilder.DropTable(
                 name: "Invoices");
         }

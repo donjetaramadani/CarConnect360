@@ -6,6 +6,7 @@ using backend.Core.DbContext;
 using backend.Core.Dtos.Accessory;
 using backend.Core.Entities;
 using backend.Core.Interfaces;
+using backend.Models.backend.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
@@ -36,7 +37,7 @@ namespace backend.Services
             }
         }
 
-        public async Task<AccessoryDto> GetAccessoryByIdAsync(int id)
+        public async Task<AccessoryDto?> GetAccessoryByIdAsync(int id)
         {
             try
             {
@@ -59,6 +60,7 @@ namespace backend.Services
                     Name = accessoryDto.Name,
                     Description = accessoryDto.Description,
                     Price = accessoryDto.Price,
+                    CategoryId = accessoryDto.CategoryId
                 };
 
                 _context.Accessories.Add(accessory);
@@ -84,6 +86,7 @@ namespace backend.Services
                 accessory.Name = accessoryDto.Name;
                 accessory.Description = accessoryDto.Description;
                 accessory.Price = accessoryDto.Price;
+                accessory.CategoryId = accessoryDto.CategoryId;
 
                 await _context.SaveChangesAsync();
 
@@ -122,6 +125,7 @@ namespace backend.Services
                 Name = accessory.Name,
                 Description = accessory.Description,
                 Price = accessory.Price,
+                CategoryId = accessory.CategoryId
             };
         }
     }
