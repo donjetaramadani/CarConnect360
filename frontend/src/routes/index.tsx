@@ -28,6 +28,9 @@ import ProductScreen from '../pages/dashboard/ProductScreen';
 import SupplierScreen from '../pages/dashboard/SupplierScreen';
 import CategoryScreen from '../pages/dashboard/CategoryScreen';
 import InvoiceScreen from '../pages/dashboard/InvoiceScreen';
+import TempPage from '../pages/public/tempPage';
+import PresentationPage from '../pages/public/PresentationPage';
+import AuthorPage from '../pages/public/AuthorPage';
 
 
 const GlobalRouter = () => {
@@ -40,6 +43,10 @@ const GlobalRouter = () => {
         <Route index element={<HomePage />} />
         <Route path={PATH_PUBLIC.register} element={<RegisterPage />} />
         <Route path={PATH_PUBLIC.login} element={<LoginPage />} />
+        <Route path={PATH_PUBLIC.temp} element={<TempPage />}/>
+        <Route path={PATH_PUBLIC.presentation} element={<PresentationPage />}/>
+        <Route path={PATH_PUBLIC.author} element={<AuthorPage/>}/>
+       
         <Route path={PATH_PUBLIC.unauthorized} element={<UnauthorizedPage />} />
 
        

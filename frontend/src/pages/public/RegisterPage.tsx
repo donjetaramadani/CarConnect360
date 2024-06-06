@@ -9,6 +9,7 @@ import { toast } from 'react-hot-toast';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PATH_PUBLIC } from '../../routes/paths';
+import './stylereg.css';
 
 const RegisterPage = () => {
   const [loading, setLoading] = useState<boolean>(false);
@@ -67,44 +68,45 @@ const RegisterPage = () => {
           <h4 className='text-3xl font-semibold text-white'></h4>
           <h4 className='text-2xl font-semibold text-white'></h4>
           <div className='absolute -top-20 right-20 w-48 h-48 bg-gradient-to-br from-[#ef32d9]  to-[#89fffd] rounded-full blur-3xl'></div>
-          <div className='absolute -bottom-20 right-20 w-32 h-32 bg-gradient-to-br from-[#cc2b5e] to-[#753a88] rounded-full blur-3xl'></div>
+          <div className='absolute -bottom-35 right-20 w-32 h-32 bg-gradient-to-br from-[#cc2b5e] to-[#753a88] rounded-full blur-3xl'></div>
         </div>
       </div>
       {/* <div>Right</div> */}
       <form
-        onSubmit={handleSubmit(onSubmitRegisterForm)}
-        className='flex-1 min-h-[600px] h-4/5 bg-[#f0ecf7] flex flex-col justify-center items-center rounded-r-2xl'
-      >
-        <h1 className='text-4xl font-bold mb-2 text-[#754eb4]'>Register</h1>
+    onSubmit={handleSubmit(onSubmitRegisterForm)}
+    className='flex-1 min-h-[600px] h-4/5 bg-[#f0ecf7] flex flex-col justify-start items-center rounded-r-2xl mt-auto mb-6 pt-4'
+>
+    <h1 className='text-2xl font-bold mb-1 text-[#754eb4]'>Register</h1>
 
-        <InputField control={control} label='First Name' inputName='firstName' error={errors.firstName?.message} />
-        <InputField control={control} label='Last Name' inputName='lastName' error={errors.lastName?.message} />
-        <InputField control={control} label='User Name' inputName='userName' error={errors.userName?.message} />
-        <InputField control={control} label='Email' inputName='email' error={errors.email?.message} />
-        <InputField
-          control={control}
-          label='Password'
-          inputName='password'
-          inputType='password'
-          error={errors.password?.message}
-        />
-        <InputField control={control} label='Address' inputName='address' error={errors.address?.message} />
+    <InputField control={control} label='First Name' inputName='firstName' error={errors.firstName?.message} />
+    <InputField control={control} label='Last Name' inputName='lastName' error={errors.lastName?.message} />
+    <InputField control={control} label='User Name' inputName='userName' error={errors.userName?.message} />
+    <InputField control={control} label='Email' inputName='email' error={errors.email?.message} />
+    <InputField
+        control={control}
+        label='Password'
+        inputName='password'
+        inputType='password'
+        error={errors.password?.message}
+    />
+    <InputField control={control} label='Address' inputName='address' error={errors.address?.message} />
 
-        <div className='px-4 mt-2 mb-6 w-9/12 flex gap-2'>
-          <h1>Already Have an account?</h1>
-          <Link
+    <div className='px-5 mt-1 mb-3 w-6/6 flex gap-1 text-sm'> {/* Adjusted font size for already have an account */}
+        <h1>Already Have an account?</h1>
+        <Link
             to={PATH_PUBLIC.login}
             className='text-[#754eb4] border border-[#754eb4] hover:shadow-[0_0_5px_2px_#754eb44c] px-3 rounded-2xl duration-200'
-          >
+        >
             Log in
-          </Link>
-        </div>
+        </Link>
+    </div>
 
-        <div className='flex justify-center items-center gap-4 mt-6'>
-          <Button variant='secondary' type='button' label='Reset' onClick={() => reset()} />
-          <Button variant='primary' type='submit' label='Register' onClick={() => {}} loading={loading} />
-        </div>
-      </form>
+    <div className='flex justify-center items-center gap-4 mt-6'>
+        <Button variant='secondary' type='button' label='Reset' onClick={() => reset()} />
+        <Button variant='primary' type='submit' label='Register' onClick={() => {}} loading={loading} />
+    </div>
+</form>
+
     </div>
   );
 };

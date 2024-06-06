@@ -4,6 +4,10 @@ export const PATH_PUBLIC = {
   home: '/',
   register: '/register',
   login: '/login',
+  temp: '/temp',
+  presentation: '/presentation',
+  author: '/author',
+  contactus: '/contactus',
   unauthorized: '/unauthorized',
   notFound: '/404',
 };

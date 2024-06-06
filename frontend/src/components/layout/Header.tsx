@@ -1,10 +1,29 @@
 import React, { useState } from 'react';
 import useAuth from '../../hooks/useAuth.hook';
-import Button from '../general/Button';
 import { AiOutlineHome } from 'react-icons/ai';
 import { FiLock, FiUnlock } from 'react-icons/fi';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { PATH_DASHBOARD, PATH_PUBLIC } from '../../routes/paths';
+
+interface IProps {
+  label: string;
+  onClick: () => void;
+  type: "button";
+  variant: "light" | "dark";
+  className?: string;
+}
+
+const Button: React.FC<IProps> = ({ label, onClick, type, variant, className }) => {
+  return (
+    <button
+      type={type}
+      className={`btn ${variant} ${className}`}
+      onClick={onClick}
+    >
+      {label}
+    </button>
+  );
+};
 
 const Header = () => {
   const { isAuthenticated, user, logout } = useAuth();
@@ -31,47 +50,81 @@ const Header = () => {
   };
 
   return (
-    <div className='flex justify-between items-center bg-[#f0ecf7] h-12 px-4 relative'>
-      <div className='flex items-center gap-4'>
+    <header className="flex justify-between items-center py-4 px-6 bg-gray-100 shadow-md">
+      <div className="flex items-center gap-4">
         <AiOutlineHome
-          className='w-8 h-8 text-purple-500 hover:text-purple-700 cursor-pointer'
+          className="w-8 h-8 text-purple-500 hover:text-purple-700 cursor-pointer"
           onClick={() => navigate('/')}
         />
+        <span className="text-lg font-bold">Logo</span>
       </div>
-      <div className='flex items-center gap-2'>
+      <div className="flex items-center gap-2">
         <Button
-          label='Info'
+          label="Info"
           onClick={toggleAuthDetails}
-          type='button'
-          variant='light'
+          type="button"
+          variant="light"
+          className="mr-2"
         />
-        {isAuthenticated ? (
+        {isAuthenticated? (
           <>
             <Button
-              label='Dashboard'
+              label="Dashboard"
               onClick={() => navigate(PATH_DASHBOARD.dashboard)}
-              type='button'
-              variant='light'
+              type="button"
+              variant="light"
+              className="mr-2"
             />
-            <Button label='Logout' onClick={logout} type='button' variant='light' />
+            <Button label="Logout" onClick={logout} type="button" variant="light" />
           </>
         ) : (
           <>
-            <Button label='Register' onClick={() => navigate(PATH_PUBLIC.register)} type='button' variant='light' />
-            <Button label='Login' onClick={() => navigate(PATH_PUBLIC.login)} type='button' variant='light' />
+            <Button
+              label="Register"
+              onClick={() => navigate(PATH_PUBLIC.register)}
+              type="button"
+              variant="light"
+              className="mr-2"
+            />
+            <Button
+              label="Login"
+              onClick={() => navigate(PATH_PUBLIC.login)}
+              type="button"
+              variant="light"
+              className="mr-2"
+            />
+            <Button
+              label="temp"
+              onClick={() => navigate(PATH_PUBLIC.temp)}
+              type="button"
+              variant="light"
+              className="mr-2"
+            />
+            <Button
+              label="Presentation"
+              onClick={() => navigate(PATH_PUBLIC.presentation)}
+              type="button"
+              variant="light"
+              className="mr-2"
+            />
+            <Button
+              label="Author"
+              onClick={() => navigate(PATH_PUBLIC.author)}
+              type="button"
+              variant="light"
+            />
           </>
         )}
       </div>
       {showAuthDetails && (
-        <div className='absolute right-0 top-12 w-48 bg-white border border-gray-200 shadow-lg rounded'>
-          <div className='p-2'>
-            <p>Auth: {isAuthenticated ? 'Authenticated' : 'Not Authenticated'}</p>
-            <p>UserName: {user ? user.userName : '--'}</p>
-            <p>UserRoles: {userRolesLabelCreator()}</p>
-          </div>
+        <div className="absolute right-0 top-12 w-48 bg-white border border-gray-200 shadow-lg rounded p-2">
+          <h5 className="text-lg font-bold mb-2">Auth Details</h5>
+          <p>Auth: {isAuthenticated? 'Authenticated' : 'Not Authenticated'}</p>
+          <p>UserName: {user? user.userName : '--'}</p>
+          <p>UserRoles: {userRolesLabelCreator()}</p>
         </div>
       )}
-    </div>
+    </header>
   );
 };
 

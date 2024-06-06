@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700&subset=latin-ext');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.pageTemplate1 {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+    justify-content: flex-end; /* Center the content horizontally */
+    align-items: flex-end; /* Align items to the bottom */
+}
+
+.max-sm\:hidden {
+    display: none;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.min-h-\[600px\] {
+    min-height: 600px;
+}
+
+.h-4\/5 {
+    height: 80%;
+}
+
+.bg-gradient-to-tr {
+    background-image: linear-gradient(to top right, #DAC6FB, #AAC1F6);
+}
+
+.via-amber-400 {
+    background-image: linear-gradient(to top right, #DAC6FB,  #AAC1F6);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.rounded-l-2xl {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.bg-\[#f0ecf7\] {
+    background-color: #f0ecf7;
+}
+
+.rounded-r-2xl {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.text-\[#754eb4\] {
+    color: #754eb4;
+}
+
+/* Add more styles here */
+
+.sign-panels {
+    width: 500px; /* Reduced width */
+    background: #fff;
+    padding: 20px 40px; /* Reduced padding */
+    margin: 40px auto;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    flex-grow: 1;
+    margin-top: auto; /* Pushes the form down */
+    margin-bottom: 20px; /* Adds some space from the bottom */
+}
+
+.title {
+    color: #9f9f9f;
+}
+
+.title span {
+    display: block;
+    font-size: 36px; /* Reduced font size */
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 16px; /* Reduced font size */
+    font-weight: 500;
+}
+
+.btn-face,
+.btn-twitter {
+    color: #fff;
+    display: inline-block;
+    width: 150px; /* Reduced width */
+    font-size: 16px; /* Reduced font size */
+    height: 40px; /* Reduced height */
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 8px 0; /* Reduced padding */
+    font-weight: 500;
+}
+
+.btn-face.fa,
+.btn-twitter.fa {
+    margin-right: 5px;
+}
+
+.btn-face {
+    background: #5397d7;
+    margin-right: 25px;
+}
+
+.btn-twitter {
+    background: #40b9e0;
+}
+
+.or {
+    margin: 25px 0; /* Reduced margin */
+    font-weight: 600;
+    color: #9f9f9f;
+}
+
+.or:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #cecece;
+    position: absolute;
+    margin-top: -10px;
+    z-index: 0;
+}
+
+.or span {
+    display: block;
+    background: #fff;
+    width: 50px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.sign-panels input {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px; /* Reduced margin */
+    height: 40px; /* Reduced height */
+    border-radius: 50px;
+    border: none;
+    background: #ededed;
+    text-align: center;
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    color: #7c7c7c;
+    font-weight: 500;
+}
+
+.sign-panels input:focus {
+    outline: none;
+}
+
+.sign-panels input[type="checkbox"] {
+    display: none;
+}
+
+.sign-panels input[type="checkbox"] + label {
+    display: block;
+    width: 50%;
+    text-align: left;
+    padding-left: 60px;
+    cursor: pointer;
+    color: #828282;
+    font-weight: 500;
+    margin-top: 10px;
+    float: left;
+    height: 40px; /* Reduced height */
+    padding-top: 10px; /* Reduced padding */
+}
+
+.sign-panels input[type="checkbox"] + label:before {
+    content: '';
+    display: block;
+    width: 12px; /* Reduced size */
+    height: 12px; /* Reduced size */
+    background: #dbdbdb;
+    position: absolute;
+    left: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 5px #ededed;
+    -webkit-transition: all.3s ease;
+    transition: all.3s ease;
+}
+
+.sign-panels input[type="checkbox"]:checked + label:before {
+    background: #FF5722;
+    box-shadow: 0 0 0 5px #FF5722;
+    -webkit-transition: all.3s ease;
+    transition: all.3s ease;
+}
+
+.btn-signin {
+    display: inline-block;
+    width: 50%;
+    margin-top: 10px;
+    height: 40px; /* Reduced height */
+    background: #ec581e;
+    border-radius: 50px;
+    padding: 8px; /* Reduced padding */
+    font-size: 16px; /* Reduced font size */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.btn-reset,
+.btn-member,
+.btn-fade {
+    font-size: 16px; /* Reduced font size */
+    font-weight: 500;
+    color: #9f9f9f;
+    display: block;
+    margin: 20px auto; /* Reduced margin */
+    text-decoration: none;
+}
+
+.btn-member {
+    margin-top: 10px; /* Reduced margin */
+}
+
+.btn-reset.fa,
+.btn-member.fa {
+    margin-left: 6px;
+}
+
+.notification p {
+    font-size: 16px; /* Reduced font size */
+    font-weight: 600;
+    color: #9f9f9f;
+}
+
+.notification span {
+    color: #ec581e;
+}
+
+.error {
+    display: block;
+    color: #ec581e;
+    font-size: 16px; /* Reduced font size */
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.already-account {
+    font-size: 14px; /* Smaller size */
+    margin-top: 20px; /* Add some margin from the previous element */
+}
+
+@media screen and (max-width: 768px) {
+    .sign-panels {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .sign-panels {
+        padding: 20px 10px;
+    }
+
+    .btn-face,
+    .btn-twitter {
+        width: 100%;
+    }
+
+    .btn-face {
+        margin-right: 0;
+        margin-bottom: 15px; /* Reduced margin */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sign-panels input[type="checkbox"] + label {
+        width: 100%;
+    }
+
+    .btn-signin {
+        width: 80%;
+    }
+
+    .title span {
+        font-size: 28px; /* Reduced font size */
+    }
+}
