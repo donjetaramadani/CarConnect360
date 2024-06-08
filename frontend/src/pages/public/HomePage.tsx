@@ -1,10 +1,13 @@
 import React from 'react';
 import HomePageImage from './ph.jpg'; 
+import 'bootstrap';
+import './stylehome.css';
+
 
 const HomePage = () => {
   return (
     <div className="flex justify-center items-center h-full">
-    <div style={{ paddingTop: '30px', paddingRight: '50px', paddingBottom: '50px', paddingLeft: '50px' }}>
+    <div style={{ paddingTop: '0px', paddingRight: '50px', paddingBottom: '50px', paddingLeft: '50px' }}>
    
 
   
@@ -34,26 +37,83 @@ const HomePage = () => {
   {/* End Navbar */}
   {/* -------- START HEADER 7 w/ text and video ------- */}
   <header className="bg-gradient-dark">
-    <div className="page-header min-vh-75" style={{backgroundImage: 'url("../assets/img/bg9.jpg")'}}>
-      <span className="mask bg-gradient-dark opacity-6" />
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-8 text-center mx-auto my-auto">
-            <h1 className="text-white">Work with an amazing design</h1>
-            <p className="lead mb-4 text-white opacity-8">We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game</p>
-            <button type="submit" className="btn bg-white text-dark">Create Account</button>
-            <h6 className="text-white mb-2 mt-5">Find us on</h6>
-            <div className="d-flex justify-content-center">
-              <a href="javascript:;"><i className="fab fa-facebook text-lg text-white me-4" /></a>
-              <a href="javascript:;"><i className="fab fa-instagram text-lg text-white me-4" /></a>
-              <a href="javascript:;"><i className="fab fa-twitter text-lg text-white me-4" /></a>
-              <a href="javascript:;"><i className="fab fa-google-plus text-lg text-white" /></a>
-            </div>
-          </div>
+  <div className="page-header min-vh-75 px-0 mx-0" style={{ backgroundImage: 'url("../assets/img/bg9.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <span className="mask bg-gradient-dark opacity-6" />
+  <div className="container-fluid p-0">
+    <div className="row justify-content-center">
+      <div className="col-lg-8 text-center mx-auto my-auto">
+        <h1 className="text-white">Work with an amazing design</h1>
+        <p className="lead mb-4 text-white opacity-8">We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game</p>
+        <button type="submit" className="btn bg-white text-dark">Create Account</button>
+        <h6 className="text-white mb-2 mt-5">Find us on</h6>
+        <div className="d-flex justify-content-center">
+          <a href="javascript:;"><i className="fab fa-facebook text-lg text-white me-4" /></a>
+          <a href="javascript:;"><i className="fab fa-instagram text-lg text-white me-4" /></a>
+          <a href="javascript:;"><i className="fab fa-twitter text-lg text-white me-4" /></a>
+          <a href="javascript:;"><i className="fab fa-google-plus text-lg text-white" /></a>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+
+  <div className="position-absolute w-100 z-index-1 bottom-0">
+  <svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shapeRendering="auto">
+    <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g className="moving-waves">
+      <use xlinkHref="#gentle-wave" x={48} y={-1} fill="rgba(255,255,255,0.40" />
+      <use xlinkHref="#gentle-wave" x={48} y={3} fill="rgba(255,255,255,0.35)" />
+      <use xlinkHref="#gentle-wave" x={48} y={5} fill="rgba(255,255,255,0.25)" />
+      <use xlinkHref="#gentle-wave" x={48} y={8} fill="rgba(255,255,255,0.20)" />
+      <use xlinkHref="#gentle-wave" x={48} y={13} fill="rgba(255,255,255,0.15)" />
+      <use xlinkHref="#gentle-wave" x={48} y={16} fill="rgba(255,255,255,0.95" />
+    </g>
+  </svg>
+</div>
+
   </header>
+
+
+
+  <section className="pt-3 pb-4" id="count-stats">
+  <div className="parallax-container">
+  <div className="container">
+    <div className="row">
+      <div className="col-lg-9 z-index-2 border-radius-xl mt-n10 mx-auto py-3 shadow-effect" style={{ backgroundColor: '#FFFFFF' }}>
+        <div className="row">
+          <div className="col-md-4 position-relative">
+            <div className="p-3 text-center">
+              <h1 className="text-gradient text-primary"><span id="state1">0</span>+</h1>
+              <h5 className="mt-3">Coded Elements</h5>
+              <p className="text-sm">From buttons, to inputs, navbars, alerts or cards, you are covered</p>
+            </div>
+            <hr className="vertical dark" />
+          </div>
+          <div className="col-md-4 position-relative">
+            <div className="p-3 text-center">
+              <h1 className="text-gradient text-primary"> <span id="state2">0</span>+</h1>
+              <h5 className="mt-3">Design Blocks</h5>
+              <p className="text-sm">Mix the sections, change the colors and unleash your creativity</p>
+            </div>
+            <hr className="vertical dark" />
+          </div>
+          <div className="col-md-4">
+            <div className="p-3 text-center">
+              <h1 className="text-gradient text-primary" id="state3">0</h1>
+              <h5 className="mt-3">Pages</h5>
+              <p className="text-sm">Save 3-4 weeks of work when you use our pre-made pages for your website</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+
   {/* -------- END HEADER 7 w/ text and video ------- */}
   <div className="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
     {/* Section with four info areas left & one card right with image and waves */}

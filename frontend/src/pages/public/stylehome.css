@@ -1,0 +1,9 @@
+.shadow-effect {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+.container {
+    max-width: 100%;
+    padding-left: -1000;
+    padding-right: -1000;
+}
