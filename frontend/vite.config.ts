@@ -1,9 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+// vite.config.ts
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+  ],
   css: {
     preprocessorOptions: {
       scss: {
@@ -11,4 +13,9 @@ export default defineConfig({
       },
     },
   },
+  // Remove the optimizeDeps configuration that includes PostCSS
+  // This will disable any optimizations related to PostCSS
+  // optimizeDeps: {
+  //   include: ['postcss', 'autoprefixer'],
+  // },
 });

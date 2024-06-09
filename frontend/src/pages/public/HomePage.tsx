@@ -2,12 +2,15 @@ import React from 'react';
 import HomePageImage from './ph.jpg'; 
 import 'bootstrap';
 import './stylehome.css';
+//import './homescript.js';
+
+
 
 
 const HomePage = () => {
   return (
     <div className="flex justify-center items-center h-full">
-    <div style={{ paddingTop: '0px', paddingRight: '50px', paddingBottom: '50px', paddingLeft: '50px' }}>
+    <div style={{ paddingTop: '0px',paddingLeft: '50px', paddingBottom: '50px', paddingRight: '50px'}}>
    
 
   
@@ -20,24 +23,19 @@ const HomePage = () => {
   <title>
     Material Kit 2 by Creative Tim
   </title>
-  {/*     Fonts and icons     */}
+ 
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-  {/* Nucleo Icons */}
+ 
   <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
-  {/* Font Awesome Icons */}
-  {/* Material Icons */}
+ 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
-  {/* CSS Files */}
+
   <link id="pagestyle" href="../assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
-  {/* Nepcha Analytics (nepcha.com) */}
-  {/* Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. */}
-  {/* Navbar Transparent */}
-  
-  {/* End Navbar */}
-  {/* -------- START HEADER 7 w/ text and video ------- */}
-  <header className="bg-gradient-dark">
-  <div className="page-header min-vh-75 px-0 mx-0" style={{ backgroundImage: 'url("../assets/img/bg9.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+
+
+  <header>
+  <div className="page-header min-vh-75 px-0 mx-0" style={{ backgroundImage: 'url("../assets/img/bg9.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', width: '100% !important', boxSizing: 'border-box'}}>
   <span className="mask bg-gradient-dark opacity-6" />
   <div className="container-fluid p-0">
     <div className="row justify-content-center">
@@ -75,8 +73,6 @@ const HomePage = () => {
 </div>
 
   </header>
-
-
 
   <section className="pt-3 pb-4" id="count-stats">
   <div className="parallax-container">
@@ -116,11 +112,11 @@ const HomePage = () => {
 
   {/* -------- END HEADER 7 w/ text and video ------- */}
   <div className="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
-    {/* Section with four info areas left & one card right with image and waves */}
-    <section className="py-7">
+ 
+   {/*--  <section className="py-7">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-6">
+        <div className="col-lg-6">
             <div className="row justify-content-start">
               <div className="col-md-6">
                 <div className="info">
@@ -174,10 +170,111 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section>*/}
+<section className="mt-7 my-3 py-3">
+  <div className="container">
+    <div className="row justify-content-center align-items-center">
+      <div className="col-lg-4 p-lg-2 mt-lg-0 mt-3">
+        <div className="rotating-card-container">
+          <div className="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-3">
+            <div className="front front-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)', backgroundSize: 'cover' }}>
+              <div className="card-body py-7 text-center">
+                <i className="material-icons text-white text-4xl my-3">touch_app</i>
+                <h3 className="text-white">Feel the <br /> Material Kit</h3>
+                <p className="text-white opacity-8">All the Bootstrap components that you need in a development have been re-design with the new look.</p>
+              </div>
+            </div>
+            <div className="back back-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80)', backgroundSize: 'cover' }}>
+              <div className="card-body pt-5 text-center">
+                <h3 className="text-white">Discover More</h3>
+                <p className="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
+                <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-4 p-lg-2 mt-lg-0 mt-3">
+        <div className="rotating-card-container">
+          <div className="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-3">
+            <div className="front front-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)', backgroundSize: 'cover' }}>
+              <div className="card-body py-7 text-center">
+                <i className="material-icons text-white text-4xl my-3">touch_app</i>
+                <h3 className="text-white">Feel the <br /> Material Kit</h3>
+                <p className="text-white opacity-8">All the Bootstrap components that you need in a development have been re-design with the new look.</p>
+              </div>
+            </div>
+            <div className="back back-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80)', backgroundSize: 'cover' }}>
+              <div className="card-body pt-5 text-center">
+                <h3 className="text-white">Discover More</h3>
+                <p className="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
+                <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="mt-2 my-3 py-3">
+  <div className="container">
+    <div className="row justify-content-center align-items-center">
+      <div className="col-lg-4 p-lg-2 mt-lg-0 mt-3">
+        <div className="rotating-card-container">
+          <div className="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-3">
+            <div className="front front-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)', backgroundSize: 'cover' }}>
+              <div className="card-body py-7 text-center">
+                <i className="material-icons text-white text-4xl my-3">touch_app</i>
+                <h3 className="text-white">Feel the <br /> Material Kit</h3>
+                <p className="text-white opacity-8">All the Bootstrap components that you need in a development have been re-design with the new look.</p>
+              </div>
+            </div>
+            <div className="back back-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80)', backgroundSize: 'cover' }}>
+              <div className="card-body pt-5 text-center">
+                <h3 className="text-white">Discover More</h3>
+                <p className="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
+                <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-4 p-lg-2 mt-lg-0 mt-3">
+        <div className="rotating-card-container">
+          <div className="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-3">
+            <div className="front front-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)', backgroundSize: 'cover' }}>
+              <div className="card-body py-7 text-center">
+                <i className="material-icons text-white text-4xl my-3">touch_app</i>
+                <h3 className="text-white">Feel the <br /> Material Kit</h3>
+                <p className="text-white opacity-8">All the Bootstrap components that you need in a development have been re-design with the new look.</p>
+              </div>
+            </div>
+            <div className="back back-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80)', backgroundSize: 'cover' }}>
+              <div className="card-body pt-5 text-center">
+                <h3 className="text-white">Discover More</h3>
+                <p className="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
+                <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    
     {/* END Section with four info areas left & one card right with image and waves */}
     {/* -------- START Features w/ pattern background & stats & rocket -------- */}
-    <section className="pb-5 position-relative bg-gradient-dark mx-n3">
+   {/*   <section className="pb-5 position-relative bg-gradient-dark mx-n3">
       <div className="container">
         <div className="row">
           <div className="col-md-8 text-start mb-5 mt-5">
@@ -270,7 +367,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
     {/* -------- END Features w/ pattern background & stats & rocket -------- */}
     <section className="pt-4 pb-6" id="count-stats">
       <div className="container">
@@ -294,6 +391,9 @@ const HomePage = () => {
             <img className="w-100 opacity-7" src="../assets/img/logos/gray-logos/logo-vodafone.svg" alt="logo" />
           </div>
         </div>
+
+
+        {/*
         <div className="row justify-content-center text-center">
           <div className="col-md-3">
             <h1 className="text-gradient text-info" id="state1">0</h1>
@@ -310,7 +410,61 @@ const HomePage = () => {
             <h5>Support</h5>
             <p>Actively engage team members that finishes on time</p>
           </div>
-        </div>
+        </div>*/}
+
+
+<section className="game-section">
+  <h2 className="line-title">trending games</h2>
+  <div className="owl-carousel custom-carousel owl-theme">
+    <div className="item active" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg)'}}>
+      <div className="item-desc">
+        <h3>Dota 2</h3>
+        <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+          Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+      </div>
+    </div>
+    <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg)'}}>
+      <div className="item-desc">
+        <h3>The Witcher 3</h3>
+        <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
+          of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+      </div>
+    </div>
+    <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/rdr-2.jpg)'}}>
+      <div className="item-desc">
+        <h3>RDR 2</h3>
+        <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+          Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+      </div>
+    </div>
+    <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/pubg.jpg)'}}>
+      <div className="item-desc">
+        <h3>PUBG Mobile</h3>
+        <p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+          Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+      </div>
+    </div>
+    <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/fortnite.jpg)'}}>
+      <div className="item-desc">
+        <h3>Fortnite</h3>
+        <p>Battle royale where 100 players fight to be the last person standing. which was a community-created mod
+          for Blizzard Entertainment's Warcraft III.</p>
+      </div>
+    </div>
+    <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg)'}}>
+      <div className="item-desc">
+        <h3>Far Cry 5</h3>
+        <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
+          which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
       </div>
     </section>
     {/* -------- START PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- */}

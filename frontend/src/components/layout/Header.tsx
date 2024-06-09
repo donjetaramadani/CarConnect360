@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import useAuth from '../../hooks/useAuth.hook';
 import { AiOutlineHome } from 'react-icons/ai';
-import { FiLock, FiUnlock } from 'react-icons/fi';
+//import { FiLock, FiUnlock } from 'react-icons/fi';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { PATH_DASHBOARD, PATH_PUBLIC } from '../../routes/paths';
+import './styleheader.css';
 
 interface IProps {
   label: string;
@@ -50,7 +51,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center py-4 px-6 bg-gray-100 shadow-md">
+    <header className="flex justify-between items-center py-4 px-6 bg-gray-100 shadow-md shadow-up">
       <div className="flex items-center gap-4">
         <AiOutlineHome
           className="w-8 h-8 text-purple-500 hover:text-purple-700 cursor-pointer"
