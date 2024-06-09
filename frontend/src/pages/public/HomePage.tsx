@@ -3,18 +3,19 @@ import HomePageImage from './ph.jpg';
 import 'bootstrap';
 import './stylehome.css';
 //import './homescript.js';
-
-
-
+//import GameSection from './GameSection';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import GameSection from './GameSection';
 
 const HomePage = () => {
+
   return (
     <div className="flex justify-center items-center h-full">
     <div style={{ paddingTop: '0px',paddingLeft: '50px', paddingBottom: '50px', paddingRight: '50px'}}>
    
 
   
-
 
 
 
@@ -109,6 +110,10 @@ const HomePage = () => {
   </div>
   </div>
 </section>
+
+
+
+
 
   {/* -------- END HEADER 7 w/ text and video ------- */}
   <div className="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
@@ -271,6 +276,7 @@ const HomePage = () => {
 
 
 
+
     
     {/* END Section with four info areas left & one card right with image and waves */}
     {/* -------- START Features w/ pattern background & stats & rocket -------- */}
@@ -413,56 +419,7 @@ const HomePage = () => {
         </div>*/}
 
 
-<section className="game-section">
-  <h2 className="line-title">trending games</h2>
-  <div className="owl-carousel custom-carousel owl-theme">
-    <div className="item active" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg)'}}>
-      <div className="item-desc">
-        <h3>Dota 2</h3>
-        <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-          Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-      </div>
-    </div>
-    <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg)'}}>
-      <div className="item-desc">
-        <h3>The Witcher 3</h3>
-        <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
-          of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-      </div>
-    </div>
-    <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/rdr-2.jpg)'}}>
-      <div className="item-desc">
-        <h3>RDR 2</h3>
-        <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-          Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-      </div>
-    </div>
-    <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/pubg.jpg)'}}>
-      <div className="item-desc">
-        <h3>PUBG Mobile</h3>
-        <p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-          Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-      </div>
-    </div>
-    <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/fortnite.jpg)'}}>
-      <div className="item-desc">
-        <h3>Fortnite</h3>
-        <p>Battle royale where 100 players fight to be the last person standing. which was a community-created mod
-          for Blizzard Entertainment's Warcraft III.</p>
-      </div>
-    </div>
-    <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg)'}}>
-      <div className="item-desc">
-        <h3>Far Cry 5</h3>
-        <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
-          which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
+<GameSection/>
 
 
       </div>
@@ -497,6 +454,10 @@ const HomePage = () => {
         </div>
       </div>
     </section>
+
+
+
+
     {/* -------- END PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- */}
   </div>
   <footer className="footer pt-5 mt-5">
