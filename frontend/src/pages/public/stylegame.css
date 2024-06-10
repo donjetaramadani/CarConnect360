@@ -2,7 +2,8 @@
 
 .game-section {
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1300px;
+    padding: 20px 40px;
   }
   
   .line-title {
