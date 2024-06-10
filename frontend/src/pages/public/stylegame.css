@@ -7,7 +7,6 @@
   }
   
   .line-title {
-    text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
   }
@@ -26,10 +25,17 @@
     margin-bottom: 20px; /* Add margin bottom to create space between items */
   }
   
-  .item img {
+  /*.item img {
     max-width: 100%;
     height: auto;
+  }*/
+
+  .item img {
+    width: 200px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the entire image is visible within the container */
   }
+  
   
   .item-desc {
     margin-top: 10px;

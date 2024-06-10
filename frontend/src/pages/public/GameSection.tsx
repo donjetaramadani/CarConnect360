@@ -63,6 +63,30 @@ const GameSection: React.FC = () => {
             <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
           </div>
         </div>
+        <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg)'}}>
+          <div className="item-desc">
+            <h3>The Witcher 3</h3>
+            <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+          </div>
+        </div>
+        <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg)'}}>
+          <div className="item-desc">
+            <h3>The Witcher 3</h3>
+            <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+          </div>
+        </div>
+        <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg)'}}>
+          <div className="item-desc">
+            <h3>The Witcher 3</h3>
+            <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+          </div>
+        </div>
+        <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg)'}}>
+          <div className="item-desc">
+            <h3>The Witcher 3</h3>
+            <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+          </div>
+        </div>
         {/* Add more OwlCarousel items as needed */}
       </div>
     </section>
