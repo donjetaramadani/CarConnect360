@@ -587,3 +587,46 @@ button {
     -webkit-transform: translateY(calc(100% - 42px));
   }
 }
+
+
+
+
+.game-section {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.line-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.owl-carousel .item {
+  position: relative;
+  margin: 5px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.owl-carousel .item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.item-desc {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+

@@ -419,10 +419,11 @@ const HomePage = () => {
         </div>*/}
 
 
-<GameSection/>
+
 
 
       </div>
+      <GameSection/>
     </section>
     {/* -------- START PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- */}
     <section className="my-5 pt-5">

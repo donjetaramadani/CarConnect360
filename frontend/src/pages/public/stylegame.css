@@ -1,0 +1,46 @@
+/* stylehome.css */
+
+.game-section {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .line-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .custom-carousel {
+    display: flex;
+    justify-content: space-between; /* Ensure items are evenly distributed */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  }
+  
+  .item {
+    flex: 0 0 calc(50% - 15px); /* Set item width to 50% minus margin */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Add margin bottom to create space between items */
+  }
+  
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .item-desc {
+    margin-top: 10px;
+  }
+  
+  .item-desc h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .item-desc p {
+    font-size: 14px;
+    color: #666;
+  }
+  
