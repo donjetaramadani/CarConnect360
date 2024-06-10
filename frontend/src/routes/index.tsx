@@ -31,6 +31,10 @@ import InvoiceScreen from '../pages/dashboard/InvoiceScreen';
 import TempPage from '../pages/public/tempPage';
 import PresentationPage from '../pages/public/PresentationPage';
 import AuthorPage from '../pages/public/AuthorPage';
+import AccessoriesPage from '../pages/public/AccessoriesPage';
+import CarsPage from '../pages/public/CarsPage';
+import LifeStylePage from '../pages/public/LifeStylePage';
+import ServicesPage from '../pages/public/ServicesPage';
 
 
 const GlobalRouter = () => {
@@ -46,6 +50,11 @@ const GlobalRouter = () => {
         <Route path={PATH_PUBLIC.temp} element={<TempPage />}/>
         <Route path={PATH_PUBLIC.presentation} element={<PresentationPage />}/>
         <Route path={PATH_PUBLIC.author} element={<AuthorPage/>}/>
+        <Route path={PATH_PUBLIC.Cars} element={<CarsPage/>}/>
+        <Route path={PATH_PUBLIC.Accessories} element={<AccessoriesPage/>}/>
+        <Route path={PATH_PUBLIC.Life} element={<LifeStylePage/>}/>
+        <Route path={PATH_PUBLIC.Services} element={<ServicesPage/>}/>
+
        
         <Route path={PATH_PUBLIC.unauthorized} element={<UnauthorizedPage />} />
 

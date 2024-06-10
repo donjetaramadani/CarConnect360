@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './styleauthor.css';
 
 const AuthorPage = () => {
   return (
@@ -36,16 +36,10 @@ const AuthorPage = () => {
     </div>
   </header>
 
-  <div className="card card-body shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+  <div className="card card-body shadow-blur mx-5 mx-md-4 mt-n7 mb-4">
    
-    <section className="py-sm-7 py-5 position-relative">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 mx-auto">
-            <div className="mt-n8 mt-md-n9 text-center">
-              <img className="avatar avatar-xxl shadow-xl position-relative z-index-2" src="../assets/img/bruce-mars.jpg" alt="bruce" loading="lazy" />
-            </div>
-            <div className="row py-5">
+
+    {/*    <div className="row py-5">
               <div className="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">
                 <div className="d-flex justify-content-between align-items-center mb-2">
                   <h3 className="mb-0">Michael Roven</h3>
@@ -77,11 +71,107 @@ const AuthorPage = () => {
                   </a>
                 </p>
               </div>
+            </div>*/}
+ <section className="py-sm-7 py-5 position-relative">
+  <div className="container">
+    <div className="row">
+      <div className="col-12 mx-auto">
+        <div className="mt-n8 mt-md-n9 text-center img-container">
+          <img 
+            className="wide-img shadow-xl position-relative z-index-2 taller-img" 
+            src="../assets/img/bruce-mars.jpg" 
+            alt="bruce" 
+            loading="lazy" 
+          />
+        </div>
+        <div className="row py-5">
+          <div className="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">
+            <div className="d-flex justify-content-center">
+              {/* Other content goes here */}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div className="card card-body shadow-xl mx-2 mx-md-4 mt-n6 mb-4">
+    {/* Section with four info areas left & one card right with image and waves */}
+    <section className="py-1">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-8">
+            <div className="row justify-content-start">
+              <div className="col-md-6">
+                <div className="info">
+                  <i className="material-icons text-3xl text-gradient text-info mb-3">public</i>
+                  <h5>Fully integrated</h5>
+                  <p>We get insulted by others, lose trust for those We get back freezes</p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="info">
+                  <i className="material-icons text-3xl text-gradient text-info mb-3">payments</i>
+                  <h5>Payments functionality</h5>
+                  <p>We get insulted by others, lose trust for those We get back freezes</p>
+                </div>
+              </div>
+            </div>
+            <div className="row justify-content-start mt-4">
+              <div className="col-md-6">
+                <div className="info">
+                  <i className="material-icons text-3xl text-gradient text-info mb-3">apps</i>
+                  <h5>Prebuilt components</h5>
+                  <p>We get insulted by others, lose trust for those We get back freezes</p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="info">
+                  <i className="material-icons text-3xl text-gradient text-info mb-3">3p</i>
+                  <h5>Improved platform</h5>
+                  <p>We get insulted by others, lose trust for those We get back freezes</p>
+                </div>
+              </div>
+              <div className="col-md-6 mt-3">
+                <i className="material-icons text-gradient text-primary text-3xl">price_change</i>
+                <h5 className="font-weight-bolder mt-3">Save Time &amp; Money</h5>
+                <p className="pe-5">Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System.</p>
+              </div>
+              <div className="col-md-6 mt-3">
+                <div className="info">
+                  <i className="material-icons text-gradient text-primary text-3xl">devices</i>
+                  <h5 className="font-weight-bolder mt-3">Fully Responsive</h5>
+                  <p className="pe-3">Regardless of the screen size, the website content will naturally fit the given resolution.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 ms-auto mt-lg-0 mt-4">
+            <div className="card">
+              <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                <a className="d-block blur-shadow-image">
+                  <img src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="img-colored-shadow" className="img-fluid border-radius-lg" />
+                </a>
+              </div>
+              <div className="card-body text-center">
+                <h5 className="font-weight-normal">
+                  <a href="javascript:;">Get insights on Search</a>
+                </h5>
+                <p className="mb-0">
+                  Website visitors today demand a frictionless user expericence — especially when using search. Because of the hight standards.
+                </p>
+                <button type="button" className="btn bg-gradient-info btn-sm mb-0 mt-3">Find out more</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    </div>
+
 
     <section className="py-3">
       <div className="container">
@@ -173,6 +263,90 @@ const AuthorPage = () => {
     </section>
     
   </div>
+
+  <section className="py-7">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 mx-auto text-center">
+            <h2 className="mb-0">Trusted by over</h2>
+            <h2 className="text-gradient text-primary mb-3">1,679,477+ web developers</h2>
+            <p className="lead">Many Fortune 500 companies, startups, universities and governmental institutions love Creative Tim's products. </p>
+          </div>
+        </div>
+        <div className="row mt-6">
+          <div className="col-lg-4 col-md-8">
+            <div className="card card-plain">
+              <div className="card-body">
+                <div className="author">
+                  <div className="name">
+                    <h6 className="mb-0 font-weight-bolder">Nick Willever</h6>
+                    <div className="stats">
+                      <i className="far fa-clock" /> 1 day ago
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-4">"This is an excellent product, the documentation is excellent and helped me get things done more efficiently."</p>
+                <div className="rating mt-3">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-8 ms-md-auto">
+            <div className="card bg-gradient-primary">
+              <div className="card-body">
+                <div className="author align-items-center">
+                  <div className="name">
+                    <h6 className="text-white mb-0 font-weight-bolder">Shailesh Kushwaha</h6>
+                    <div className="stats text-white">
+                      <i className="far fa-clock" /> 1 week ago
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-4 text-white">"I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"</p>
+                <div className="rating mt-3">
+                  <i className="fas fa-star text-white" />
+                  <i className="fas fa-star text-white" />
+                  <i className="fas fa-star text-white" />
+                  <i className="fas fa-star text-white" />
+                  <i className="fas fa-star text-white" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-8">
+            <div className="card card-plain">
+              <div className="card-body">
+                <div className="author">
+                  <div className="name">
+                    <h6 className="mb-0 font-weight-bolder">Samuel Kamuli</h6>
+                    <div className="stats">
+                      <i className="far fa-clock" /> 3 weeks ago
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-4">"Great product. Helped me cut the time to set up a site. I used the components within instead of starting from scratch. I highly recommend for developers who want to spend more time on the backend!."</p>
+                <div className="rating mt-3">
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                  <i className="fas fa-star" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="horizontal dark my-5" />
+        
+      </div>
+    </section>
+
+
   <section className="py-lg-5">
     <div className="container">
       <div className="row">
@@ -267,6 +441,57 @@ const AuthorPage = () => {
       </div>
     </div>
   </section>
+
+  <section className="my-5">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-7 col-12 my-auto">
+            <h3 className="text-gradient text-primary mb-0">You liked it and</h3>
+            <h3>Want more?</h3>
+            <p className="pe-md-5 mb-4">
+              Most complex and innovative Design System Made by <a href="https://creative-tim.com/" target="_blank">Creative Tim </a> . Check our latest Premium Bootstrap 5 UI Kit.
+              Designed for those who like bold elements and beautiful websites. Made of hundred of elements, designed blocks and fully coded pages, Material Kit is ready to help you create stunning websites and webapps.
+            </p>
+            <div className="github-buttons">
+              <a href="https://www.creative-tim.com/product/material-kit-pro?ref=index-mk2" target="_blank" className="btn bg-gradient-primary mb-5 mb-sm-0">Upgrade to Pro</a>
+              <div className="github-button">
+                <span />
+              </div>
+            </div>
+          </div>
+          <div className="col-md-5 col-12 my-auto">
+            <a href="https://www.creative-tim.com/product/material-kit-pro?ref=index-mk2">
+              <img className="w-100 border-radius-lg shadow-lg" src="https://s3.amazonaws.com/creativetim_bucket/products/46/original/material-kit-pro.jpg?1632843641" alt="Product Image" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    {/* -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- */}
+    <div className="py-5">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-5 ms-auto">
+            <h4 className="mb-1">Thank you for your support!</h4>
+            <p className="lead mb-0">We deliver the best web products</p>
+          </div>
+          <div className="col-lg-5 me-lg-auto my-lg-auto text-lg-end mt-5">
+            <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Kit%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23bootstrap5&url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit" className="btn btn-twitter mb-0 me-2" target="_blank">
+              <i className="fab fa-twitter me-1" /> Tweet
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-kit" className="btn btn-facebook mb-0 me-2" target="_blank">
+              <i className="fab fa-facebook-square me-1" /> Share
+            </a>
+            <a href="https://www.pinterest.com/pin/create/button/?url=https://www.creative-tim.com/product/material-kit" className="btn btn-pinterest mb-0 me-2" target="_blank">
+              <i className="fab fa-pinterest me-1" /> Pin it
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 
   <footer className="footer py-5">
     <div className="container z-index-1 position-relative">

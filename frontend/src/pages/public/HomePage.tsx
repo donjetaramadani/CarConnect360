@@ -6,6 +6,8 @@ import './stylehome.css';
 //import GameSection from './GameSection';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { Link } from 'react-router-dom';
+import { PATH_PUBLIC } from '../../routes/paths'; 
 import GameSection from './GameSection';
 
 const HomePage = () => {
@@ -193,7 +195,8 @@ const HomePage = () => {
               <div className="card-body pt-5 text-center">
                 <h3 className="text-white">Discover More</h3>
                 <p className="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
-                <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>
+               {/* <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>*/}
+                <Link to={PATH_PUBLIC.Cars} className="btn btn-white btn-sm w-50 mx-auto mt-3">Discover Cars</Link>
               </div>
             </div>
           </div>
@@ -213,7 +216,8 @@ const HomePage = () => {
               <div className="card-body pt-5 text-center">
                 <h3 className="text-white">Discover More</h3>
                 <p className="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
-                <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>
+               {/* <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>*/}
+                <Link to={PATH_PUBLIC.Accessories} className="btn btn-white btn-sm w-50 mx-auto mt-3">Discover Accessories</Link>
               </div>
             </div>
           </div>
@@ -240,7 +244,8 @@ const HomePage = () => {
               <div className="card-body pt-5 text-center">
                 <h3 className="text-white">Discover More</h3>
                 <p className="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
-                <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>
+               {/* <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>*/}
+                <Link to={PATH_PUBLIC.Life} className="btn btn-white btn-sm w-50 mx-auto mt-3">Discover Life Style</Link>
               </div>
             </div>
           </div>
@@ -260,7 +265,8 @@ const HomePage = () => {
               <div className="card-body pt-5 text-center">
                 <h3 className="text-white">Discover More</h3>
                 <p className="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
-                <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>
+                {/*<a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>*/}
+                <Link to={PATH_PUBLIC.Services} className="btn btn-white btn-sm w-50 mx-auto mt-3">Discover Services</Link>
               </div>
             </div>
           </div>
