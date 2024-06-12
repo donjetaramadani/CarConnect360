@@ -9,3 +9,18 @@
 header {
     box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.5);
   }
+
+
+.navbar-search-icon{
+    position: relative;
+}
+
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: rgb(235, 31, 31);
+    border-radius: 5px;
+    top: -4px;
+    right: -1px;
+}

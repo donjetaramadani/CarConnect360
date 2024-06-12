@@ -3,11 +3,14 @@ import App from './App.tsx';
 import './index.css';
 import AuthContextProvider from './auth/auth.context.tsx';
 import { BrowserRouter } from 'react-router-dom';
+import StoreContextProvider from './context/StoreContext.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <AuthContextProvider>
-      <App />
+      <StoreContextProvider>
+        <App />
+      </StoreContextProvider>
     </AuthContextProvider>
   </BrowserRouter>
 );

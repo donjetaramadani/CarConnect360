@@ -35,6 +35,8 @@ import AccessoriesPage from '../pages/public/AccessoriesPage';
 import CarsPage from '../pages/public/CarsPage';
 import LifeStylePage from '../pages/public/LifeStylePage';
 import ServicesPage from '../pages/public/ServicesPage';
+import CartPage from '../pages/public/Cart/CartPage';
+import PlaceOrderPage from '../pages/public/PlaceOrder/PlaceOrder';
 
 
 const GlobalRouter = () => {
@@ -54,6 +56,8 @@ const GlobalRouter = () => {
         <Route path={PATH_PUBLIC.Accessories} element={<AccessoriesPage/>}/>
         <Route path={PATH_PUBLIC.Life} element={<LifeStylePage/>}/>
         <Route path={PATH_PUBLIC.Services} element={<ServicesPage/>}/>
+        <Route path={PATH_PUBLIC.Cart} element={<CartPage/>}/>
+        <Route path={PATH_PUBLIC.Place} element={<PlaceOrderPage/>}/>
 
        
         <Route path={PATH_PUBLIC.unauthorized} element={<UnauthorizedPage />} />

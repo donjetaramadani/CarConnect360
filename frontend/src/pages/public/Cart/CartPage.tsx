@@ -1,19 +1,12 @@
-import React, { useState } from 'react';
-import './../../../assets/css/material-kit.css';
-import './../../../assets/css/material-kit.min.css';
-import './../../../assets/css/nucleo-icons.css';
-import './../../../assets/css/nucleo-svg.css';
-import './styles.css';
-import ExploreMenu from '../../components/exploremenu/ExploreMenu';
-import FoodDisplay from '../../components/FoodDisplay/FoodDisplay';
+import React from 'react';
+import './../../../../assets/css/material-kit.css';
+import './../../../../assets/css/material-kit.min.css';
+import './../../../../assets/css/nucleo-icons.css';
+import './../../../../assets/css/nucleo-svg.css'
+//import './styles.css';
 
 
-const  AccessoriesPage = () => {
-
-
-  const [category, setCategory] = useState("All");
-
-
+const  CartPage = () => {
   return (
     <div className="container">
   
@@ -130,18 +123,6 @@ const  AccessoriesPage = () => {
       </div>
     </div>
     {/* -------- END Content Presentation Docs ------- */}
-
-
-
-    <ExploreMenu category={category} setCategory={setCategory}/>
-    <FoodDisplay category={category}/>
-   
-
-
-
-
-
-
   
     <section className="py-sm-7" id="download-soft-ui">
       <div className="bg-gradient-dark position-relative m-3 border-radius-xl overflow-hidden">
@@ -331,5 +312,5 @@ const  AccessoriesPage = () => {
 
 
 
-export default AccessoriesPage;
+export default CartPage;
 

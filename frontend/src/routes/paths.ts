@@ -16,6 +16,8 @@ export const PATH_PUBLIC = {
   Accessories: '/accessories',
   Life: '/lifestyle',
   Services: '/services',
+  Cart: '/cart',
+  Place: '/placeorder',
   unauthorized: '/unauthorized',
   notFound: '/404',
 };
