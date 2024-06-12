@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import useAuth from '../../hooks/useAuth.hook';
 import { AiOutlineHome } from 'react-icons/ai';
 //import { FiLock, FiUnlock } from 'react-icons/fi';
@@ -7,6 +7,7 @@ import { PATH_DASHBOARD, PATH_PUBLIC } from '../../routes/paths';
 import './styleheader.css';
 import '../../pages/public/Cart/CartPage';
 import { Link } from 'react-router-dom';
+import { StoreContext } from '../../context/StoreContext';
 
 
 interface IProps {
@@ -29,11 +30,16 @@ const Button: React.FC<IProps> = ({ label, onClick, type, variant, className }) 
   );
 };
 
+
+
+
 const Header = () => {
   const { isAuthenticated, user, logout } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
   const [showAuthDetails, setShowAuthDetails] = useState(false);
+
+  const {getTotalCartAmount} = useContext(StoreContext); 
 
   const userRolesLabelCreator = () => {
     if (user) {
@@ -124,7 +130,7 @@ const Header = () => {
                     </div>
                     <div className='navbar-search-icon'>
                    <Link to='/cart'><img src="../assets/img/shopping-bag.png" alt="basket icon" style={{ width: '25px', height: '25px', marginRight: '10px' }}/></Link>
-                      <div className='dot'></div>
+                      <div className={getTotalCartAmount()===0? "" : "dot"}></div>
                     </div>
               </div>
           </>
