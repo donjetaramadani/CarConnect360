@@ -5,6 +5,9 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { PATH_DASHBOARD, PATH_PUBLIC } from '../../routes/paths';
 import './styleheader.css';
+import '../../pages/public/Cart/CartPage';
+import { Link } from 'react-router-dom';
+
 
 interface IProps {
   label: string;
@@ -120,7 +123,7 @@ const Header = () => {
                       <img src="../assets/img/search.png" alt="search icon" style={{ width: '20px', height: '20px', marginRight: '10px' }}/>
                     </div>
                     <div className='navbar-search-icon'>
-                      <img src="../assets/img/shopping-bag.png" alt="basket icon" style={{ width: '25px', height: '25px', marginRight: '10px' }}/>
+                   <Link to='/cart'><img src="../assets/img/shopping-bag.png" alt="basket icon" style={{ width: '25px', height: '25px', marginRight: '10px' }}/></Link>
                       <div className='dot'></div>
                     </div>
               </div>
