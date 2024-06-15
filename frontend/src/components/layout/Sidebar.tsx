@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { createPopper } from "@popperjs/core";
 import './Sidebar.css';
+import { PATH_DASHBOARD } from '../../routes/paths.ts';
 
 const ANIMATION_DURATION = 300;
 
@@ -291,37 +292,35 @@ const Sidebar = () => {
                   <span className="menu-icon">
                     <i className="ri-vip-diamond-fill" />
                   </span>
-                  <span className="menu-title">Components</span>
-                  <span className="menu-suffix">
-                    <span className="badge primary">Hot</span>
-                  </span>
+                  <span className="menu-title">Grid</span>
+                 
                 </a>
                 <div className="sub-menu-list">
                   <ul>
                     <li className="menu-item">
-                      <a href="#">
-                        <span className="menu-title">Grid</span>
+                      <a href={PATH_DASHBOARD.usersManagement}>
+                        <span className="menu-title">Users Management</span>
                       </a>
                     </li>
                     <li className="menu-item">
-                      <a href="#">
-                        <span className="menu-title">Layout</span>
+                      <a href={PATH_DASHBOARD.inbox}>
+                        <span className="menu-title">Inbox</span>
                       </a>
                     </li>
                     <li className="menu-item sub-menu">
                       <a href="#">
-                        <span className="menu-title">Forms</span>
+                        <span className="menu-title">Logs</span>
                       </a>
                       <div className="sub-menu-list">
                         <ul>
                           <li className="menu-item">
-                            <a href="#">
-                              <span className="menu-title">Input</span>
+                            <a href={PATH_DASHBOARD.systemLogs}>
+                              <span className="menu-title">System Logs</span>
                             </a>
                           </li>
                           <li className="menu-item">
-                            <a href="#">
-                              <span className="menu-title">Select</span>
+                            <a href={PATH_DASHBOARD.myLogs}>
+                              <span className="menu-title">My Logs</span>
                             </a>
                           </li>
                           <li className="menu-item sub-menu">
@@ -375,16 +374,41 @@ const Sidebar = () => {
                 <div className="sub-menu-list">
                   <ul>
                     <li className="menu-item">
-                      <a href="#">
-                        <span className="menu-title">Pie chart</span>
+                      <a href={PATH_DASHBOARD.sendMessage}>
+                        <span className="menu-title">Send Message</span>
                       </a>
                     </li>
                     <li className="menu-item">
-                      <a href="#">
-                        <span className="menu-title">Line chart</span>
+                      <a href={PATH_DASHBOARD.allMessages}>
+                        <span className="menu-title">All Messages</span>
                       </a>
                     </li>
-                    <li className="menu-item">
+                    {/*<li className="menu-item">
+                      <a href={PATH_DASHBOARD.accessories}>
+                        <span className="menu-title">Bar chart</span>
+                      </a>
+                    </li>*/}
+                    {/*  <li className="menu-item">
+                      <a href={PATH_DASHBOARD.Appointment}>
+                        <span className="menu-title">Bar chart</span>
+                      </a>
+                    </li>*/}
+                    {/*  <li className="menu-item">
+                      <a href={PATH_DASHBOARD.Booking}>
+                        <span className="menu-title">Bar chart</span>
+                      </a>
+                    </li>*/}
+                    {/* <li className="menu-item">
+                      <a href={PATH_DASHBOARD.Customer}>
+                        <span className="menu-title">Bar chart</span>
+                      </a>
+                    </li>*/}
+                     {/* <li className="menu-item">
+                      <a href={PATH_DASHBOARD.Payment}>
+                        <span className="menu-title">Bar chart</span>
+                      </a>
+                    </li>*/}
+                      <li className="menu-item">
                       <a href="#">
                         <span className="menu-title">Bar chart</span>
                       </a>
@@ -429,13 +453,18 @@ const Sidebar = () => {
                 <div className="sub-menu-list">
                   <ul>
                     <li className="menu-item">
-                      <a href="#">
-                        <span className="menu-title">Google maps</span>
+                      <a href={PATH_DASHBOARD.Product}>
+                        <span className="menu-title">Product</span>
                       </a>
                     </li>
                     <li className="menu-item">
-                      <a href="#">
-                        <span className="menu-title">Open street map</span>
+                      <a href={PATH_DASHBOARD.Supplier}>
+                        <span className="menu-title">Supplier</span>
+                      </a>
+                    </li>
+                    <li className="menu-item">
+                      <a href={PATH_DASHBOARD.Invoice}>
+                        <span className="menu-title">Invoice</span>
                       </a>
                     </li>
                   </ul>
@@ -465,30 +494,41 @@ const Sidebar = () => {
               </li>
               <li className="menu-header" style={{paddingTop: 20}}><span> EXTRA </span></li>
               <li className="menu-item">
-                <a href="#">
+                <a href={PATH_DASHBOARD.owner}>
                   <span className="menu-icon">
                     <i className="ri-book-2-fill" />
                   </span>
-                  <span className="menu-title">Documentation</span>
+                  <span className="menu-title">Owner</span>
                   <span className="menu-suffix">
                     <span className="badge secondary">Beta</span>
                   </span>
                 </a>
               </li>
               <li className="menu-item">
-                <a href="#">
+                <a href={PATH_DASHBOARD.admin}>
                   <span className="menu-icon">
-                    <i className="ri-calendar-fill" />
+                 {/*   <i className="ri-calendar-fill" />*/}
+                 <i className="ri-book-2-fill" />
                   </span>
-                  <span className="menu-title">Calendar</span>
+                  <span className="menu-title">Admin</span>
                 </a>
               </li>
               <li className="menu-item">
-                <a href="#">
+                <a href={PATH_DASHBOARD.manager}>
                   <span className="menu-icon">
-                    <i className="ri-service-fill" />
+                   {/*  <i className="ri-service-fill" />*/}
+                   <i className="ri-book-2-fill" />
                   </span>
-                  <span className="menu-title">Examples</span>
+                  <span className="menu-title">Manager</span>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href={PATH_DASHBOARD.user}>
+                  <span className="menu-icon">
+                   {/*  <i className="ri-service-fill" />*/}
+                   <i className="ri-service-fill" />
+                  </span>
+                  <span className="menu-title">User</span>
                 </a>
               </li>
             </ul>
