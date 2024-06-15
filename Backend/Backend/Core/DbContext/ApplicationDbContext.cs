@@ -17,7 +17,7 @@ namespace backend.Core.DbContext
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
-        public DbSet<Invoice> Invoices { get; set; }
+       
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<Payment> Payments { get; set; }
@@ -25,6 +25,9 @@ namespace backend.Core.DbContext
         public DbSet<Log> Logs { get; set; }
         public DbSet<Message> Messages { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
+
+
+        public DbSet<FoodItem> FoodItems { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -58,13 +61,7 @@ namespace backend.Core.DbContext
                 e.HasKey(s => s.Id);
             });
 
-            builder.Entity<Invoice>(e =>
-            {
-                e.ToTable("Invoices");
-                e.HasKey(i => i.Id);
-                e.Property(i => i.Amount)
-                    .HasColumnType("decimal(18,2)");
-            });
+          
 
             builder.Entity<Accessory>(e =>
             {
@@ -100,6 +97,20 @@ namespace backend.Core.DbContext
                     .WithMany(c => c.Payments) // Ensure Customer has a collection of Payments
                     .HasForeignKey(p => p.CustomerId);
             });
+
+
+            // Configure FoodItem entity
+            builder.Entity<FoodItem>(e =>
+            {
+                e.ToTable("FoodItems");
+                e.HasKey(f => f.Id);
+                e.Property(f => f.Name).IsRequired().HasMaxLength(100);
+                e.Property(f => f.Description).IsRequired().HasMaxLength(500);
+                e.Property(f => f.Price).IsRequired().HasColumnType("decimal(18,2)");
+                e.Property(f => f.Image).IsRequired().HasMaxLength(200);
+                e.Property(f => f.Category).IsRequired().HasMaxLength(100);
+            });
+
         }
     }
 }

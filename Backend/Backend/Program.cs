@@ -35,14 +35,14 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ISupplierService, SupplierService>(); 
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 
-builder.Services.AddScoped<IInvoiceService, InvoiceService>();
+
 
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddScoped<IAppointmentService, AppointmentService>(); 
-builder.Services.AddScoped<IAccessoryService, AccessoryService>(); 
-
+builder.Services.AddScoped<IAccessoryService, AccessoryService>();
+builder.Services.AddScoped<IFoodItemService, FoodItemService>();
 
 // Add Identity
 builder.Services

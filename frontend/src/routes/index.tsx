@@ -22,8 +22,6 @@ import RegisterPage from '../pages/public/RegisterPage';
 import UnauthorizedPage from '../pages/public/UnauthorizedPage';
 import AccessoriesListPage from '../pages/dashboard/AccessoriesListPage';
 import AppointmentListPage from '../pages/dashboard/AppointmentListPage';
-import FatimePage from '../pages/dashboard/FatimePage';
-import FatimesPage from '../pages/dashboard/FatimesPage';
 import ProductScreen from '../pages/dashboard/ProductScreen';
 import SupplierScreen from '../pages/dashboard/SupplierScreen';
 import CategoryScreen from '../pages/dashboard/CategoryScreen';
@@ -37,6 +35,9 @@ import LifeStylePage from '../pages/public/LifeStylePage';
 import ServicesPage from '../pages/public/ServicesPage';
 import CartPage from '../pages/public/Cart/CartPage';
 import PlaceOrderPage from '../pages/public/PlaceOrder/PlaceOrder';
+import Add from '../pages/dashboard/Add/Add';
+import List from '../pages/dashboard/List/List';
+import Orders from '../pages/dashboard/Order/Orders';
 
 
 const GlobalRouter = () => {
@@ -71,8 +72,6 @@ const GlobalRouter = () => {
           <Route path={PATH_DASHBOARD.user} element={<UserPage />} />
           <Route path={PATH_DASHBOARD.Appointment} element={<AppointmentListPage/>} />
           <Route path={PATH_DASHBOARD.accessories} element={<AccessoriesListPage/>} />
-          <Route path={PATH_DASHBOARD.Fatime} element={<FatimePage/>} />
-          <Route path={PATH_DASHBOARD.Fatimes} element={<FatimesPage/>} />
           <Route path={PATH_DASHBOARD.Product} element={<ProductScreen/>} />
           <Route path={PATH_DASHBOARD.Category} element={<CategoryScreen/>} />
           <Route path={PATH_DASHBOARD.Supplier} element={<SupplierScreen/>} />
@@ -87,6 +86,9 @@ const GlobalRouter = () => {
           <Route path={PATH_DASHBOARD.allMessages} element={<AllMessagesPage />} />
           <Route path={PATH_DASHBOARD.systemLogs} element={<SystemLogsPage />} />
           <Route path={PATH_DASHBOARD.admin} element={<AdminPage />} />
+          <Route path={PATH_DASHBOARD.Add} element={<Add/>} />
+          <Route path={PATH_DASHBOARD.List} element={<List/>} />
+          <Route path={PATH_DASHBOARD.Orders} element={<Orders/>} />
         </Route>
         <Route element={<AuthGuard roles={ownerAccessRoles} />}>
           <Route path={PATH_DASHBOARD.owner} element={<OwnerPage />} />
