@@ -2,11 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { createPopper } from "@popperjs/core";
 import './Sidebar.css';
 import { PATH_DASHBOARD } from '../../routes/paths.ts';
+import { CiUser } from 'react-icons/ci';
+import useAuth from '../../hooks/useAuth.hook';
+import { useNavigate } from 'react-router-dom'; 
 
 const ANIMATION_DURATION = 300;
 
 const Sidebar = () => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const { user } = useAuth(); 
+  const navigate = useNavigate();
 
   useEffect(() => {
     const sidebarEl = document.getElementById("sidebar");
@@ -283,6 +288,15 @@ const Sidebar = () => {
       </div>
       <div className="sidebar-layout">
         
+
+      <div id="sidebar" className={`sidebar ${sidebarCollapsed? 'collapsed' : ''}`}>
+        <div className="sidebar-header flex flex-col items-center py-4">
+          <CiUser className="w-16 h-16 text-white mb-2" />
+              <h4 className="text-white font-bold">{user?.firstName} {user?.lastName}</h4>
+        </div>
+      </div>
+
+
         <div className="sidebar-content">
           <nav className="menu open-current-submenu">
             <ul>
@@ -426,18 +440,18 @@ const Sidebar = () => {
                 <div className="sub-menu-list">
                   <ul>
                     <li className="menu-item">
-                      <a href="#">
-                        <span className="menu-title">Products</span>
+                      <a href={PATH_DASHBOARD.Add}>
+                        <span className="menu-title">Add</span>
                       </a>
                     </li>
                     <li className="menu-item">
-                      <a href="#">
+                      <a href={PATH_DASHBOARD.List}>
+                        <span className="menu-title">List</span>
+                      </a>
+                    </li>
+                    <li className="menu-item">
+                      <a href={PATH_DASHBOARD.Orders}>
                         <span className="menu-title">Orders</span>
-                      </a>
-                    </li>
-                    <li className="menu-item">
-                      <a href="#">
-                        <span className="menu-title">credit card</span>
                       </a>
                     </li>
                   </ul>

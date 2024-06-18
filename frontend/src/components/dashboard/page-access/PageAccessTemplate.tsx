@@ -1,25 +1,24 @@
-import { ReactNode } from 'react';
+import React from 'react';
 import { IconType } from 'react-icons';
 
-interface IProps {
-  role: string;
-  icon: IconType;
+interface PageAccessTemplateProps {
   color: string;
-  children?: ReactNode;
+  icon: IconType;
+  role: string;
+  children?: React.ReactNode;
 }
 
-const PageAccessTemplate = ({ role, icon: Icon, color, children }: IProps) => {
+const PageAccessTemplate: React.FC<PageAccessTemplateProps> = ({ color, icon: Icon, role, children }) => {
   return (
-    <div className='pageTemplate3' style={{ borderColor: color }}>
-      <section className='w-full flex justify-center items-center gap-8'>
-        <div>{<Icon className='text-6xl' style={{ color: color }} />}</div>
-
-        <div className='space-y-2' style={{ color: color }}>
-          <h2 className='text-4xl'>This is {role} Page</h2>
-          <h2 className='text-md'>You must have {role} access to see this page</h2>
-        </div>
-      </section>
-      <section>{children}</section>
+    <div style={{ border: `1px solid ${color}`, padding: '20px', borderRadius: '5px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
+        <Icon style={{ color, marginRight: '10px' }} />
+        <h2 style={{ margin: 0 }}>This Is {role} Page</h2>
+      </div>
+      <p style={{ margin: '0 0 20px' }}>You Must Have {role} Access To See This Page</p>
+      <div style={{ marginBottom: '20px' }}>
+        {children}
+      </div>
     </div>
   );
 };

@@ -9,11 +9,7 @@ const AdminPage = () => {
 
     <div className='admin-page'>
     <PageAccessTemplate color='#9333EA' icon={FaUserShield} role='Admin' />
-    <div className="admin-sidebar">
-      <NavLink to="add">Add Food</NavLink>
-      <NavLink to="list">Food List</NavLink>
-      <NavLink to="orders">Orders</NavLink>
-    </div>
+   
     <div className="admin-content">
       <Outlet />
     </div>

@@ -1,4 +1,5 @@
-﻿using backend.Core.Entities;
+﻿using System.Reflection.Emit;
+using backend.Core.Entities;
 using backend.Models;
 using backend.Models.backend.Models;
 using Microsoft.AspNetCore.Identity;
@@ -25,9 +26,9 @@ namespace backend.Core.DbContext
         public DbSet<Log> Logs { get; set; }
         public DbSet<Message> Messages { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
+        public DbSet<Food> Foods { get; set; }
 
 
-        public DbSet<FoodItem> FoodItems { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -98,18 +99,17 @@ namespace backend.Core.DbContext
                     .HasForeignKey(p => p.CustomerId);
             });
 
-
-            // Configure FoodItem entity
-            builder.Entity<FoodItem>(e =>
+            builder.Entity<Food>(e =>
             {
-                e.ToTable("FoodItems");
+                e.ToTable("Foods");
                 e.HasKey(f => f.Id);
                 e.Property(f => f.Name).IsRequired().HasMaxLength(100);
                 e.Property(f => f.Description).IsRequired().HasMaxLength(500);
                 e.Property(f => f.Price).IsRequired().HasColumnType("decimal(18,2)");
-                e.Property(f => f.Image).IsRequired().HasMaxLength(200);
+                e.Property(f => f.Image).IsRequired();
                 e.Property(f => f.Category).IsRequired().HasMaxLength(100);
             });
+
 
         }
     }

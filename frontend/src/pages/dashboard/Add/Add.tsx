@@ -1,51 +1,62 @@
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import './Add.css';
-//import { assets } from '../../assets/assets';
+import uploadAreaImage from '../../../../assets/assetsi/admin_assets/upload_area.png';
 import axios from "axios";
 import { toast } from 'react-hot-toast';
 
 const Add = () => {
-    const url = "http://localhost:3000";
-    const [image, setImage] = useState<File | null>(null);
+    const [image, setImage] = useState<File | null>(null); // Explicitly define image as File or null
     const [data, setData] = useState({
-        name: "",
-        description: "",
-        price: "",
-        category: "Salad"
+        name: '',
+        description: '',
+        price: '',
+        category: 'Salad' // Default category
     });
 
-    const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-        const { name, value } = event.target;
-        setData(data => ({ ...data, [name]: value }));
+    const onChangeHandler = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        setData({ ...data, [e.target.name]: e.target.value });
     };
 
-    const onSubmitHandler = async (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        const formData = new FormData();
-        formData.append("name", data.name);
-        formData.append("description", data.description);
-        formData.append("price", data.price);
-        formData.append("category", data.category);
-        if (image) {
-            formData.append("image", image);
+    const onFileChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+        if (e.target.files && e.target.files.length > 0) {
+            setImage(e.target.files[0]);
         }
+    };
+
+    const onSubmitHandler = async (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
 
         try {
-            const response = await axios.post(`${url}/api/food/add`, formData);
+            const formData = new FormData();
+            formData.append('name', data.name);
+            formData.append('description', data.description);
+            formData.append('price', data.price);
+            formData.append('category', data.category);
+            if (image) {
+                formData.append('image', image);
+            }
+
+            const response = await axios.post('http://localhost:5288/api/food/add', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            });
+
             if (response.data.success) {
+                toast.success(response.data.message);
                 setData({
-                    name: "",
-                    description: "",
-                    price: "",
-                    category: "Salad"
+                    name: '',
+                    description: '',
+                    price: '',
+                    category: 'Salad'
                 });
                 setImage(null);
-                toast.success(response.data.message);
             } else {
                 toast.error(response.data.message);
             }
         } catch (error) {
-            toast.error("Error adding the item.");
+            console.error('Error adding food:', error);
+            toast.error('Failed to add food item');
         }
     };
 
@@ -53,11 +64,11 @@ const Add = () => {
         <div className='add'>
             <form className='flex-col' onSubmit={onSubmitHandler}>
                 <div className='add-img-upload flex-col'>
-                    <p>Upload Image</p>
+                    <p>Upload Image (Optional)</p>
                     <label htmlFor="image">
-                        <img src={image ? URL.createObjectURL(image) : assets.upload_area} alt="" />
+                        <img src={image ? URL.createObjectURL(image) : uploadAreaImage} alt="Upload Area" />
                     </label>
-                    <input onChange={(e) => setImage(e.target.files ? e.target.files[0] : null)} type="file" id="image" hidden required />
+                    <input onChange={onFileChangeHandler} type="file" id="image" hidden />
                 </div>
                 <div className="add-product-name flex-col">
                     <p>Product name</p>
@@ -70,7 +81,7 @@ const Add = () => {
                 <div className="add-category-price">
                     <div className="add-category flex-col">
                         <p>Product Category</p>
-                        <select onChange={onChangeHandler} name="category">
+                        <select onChange={onChangeHandler} value={data.category} name="category">
                             <option value="Salad">Salad</option>
                             <option value="Rolls">Rolls</option>
                             <option value="Desert">Deserts</option>
