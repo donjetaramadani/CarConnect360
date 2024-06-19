@@ -1,16 +1,24 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\images\\143A5048.jpg",
-      "PackagePath": "staticwebassets\\images\\143A5048.jpg"
+      "Id": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\uploads\\09196b9c-068a-4541-8d3c-052f54e014fe_143A5463.jpg",
+      "PackagePath": "staticwebassets\\uploads\\09196b9c-068a-4541-8d3c-052f54e014fe_143A5463.jpg"
     },
     {
-      "Id": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\images\\search.png",
-      "PackagePath": "staticwebassets\\images\\search.png"
+      "Id": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\uploads\\38899340-5171-49ec-a196-8250e5991f63_^.jfif",
+      "PackagePath": "staticwebassets\\uploads\\38899340-5171-49ec-a196-8250e5991f63_^.jfif"
     },
     {
-      "Id": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\images\\shopping-bag.png",
-      "PackagePath": "staticwebassets\\images\\shopping-bag.png"
+      "Id": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\uploads\\54f38108-ab8a-424b-9066-73dbb75d70d4_search.png",
+      "PackagePath": "staticwebassets\\uploads\\54f38108-ab8a-424b-9066-73dbb75d70d4_search.png"
+    },
+    {
+      "Id": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\uploads\\66fb1c47-31a4-41bf-9873-dbeada013c35_143A5464.jpg",
+      "PackagePath": "staticwebassets\\uploads\\66fb1c47-31a4-41bf-9873-dbeada013c35_143A5464.jpg"
+    },
+    {
+      "Id": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\uploads\\b95f5a0b-ef7b-430d-8290-1bad4de1b739_Screenshot (328).png",
+      "PackagePath": "staticwebassets\\uploads\\b95f5a0b-ef7b-430d-8290-1bad4de1b739_Screenshot (328).png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props",

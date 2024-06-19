@@ -35,18 +35,20 @@ namespace backend.Controllers
             return Ok(new { success = true, data = foods });
         }
 
-        [HttpPost("remove")]
-        public async Task<IActionResult> RemoveFood(int id)
+
+        [HttpPost("removeByName")]
+        public async Task<IActionResult> RemoveFoodByName([FromBody] RemoveFoodByNameRequest request)
         {
-            var result = await _foodService.RemoveFoodAsync(id);
+            var result = await _foodService.RemoveFoodByNameAsync(request.Name);
             if (!result)
             {
                 return NotFound(new { success = false, message = "Food Not Found" });
             }
             return Ok(new { success = true, message = "Food Removed" });
         }
+    
 
-        [HttpPut("update")]
+    [HttpPut("update")]
         public async Task<IActionResult> UpdateFood([FromForm] UpdateFoodDto foodDto, IFormFile image)
         {
             var result = await _foodService.UpdateFoodAsync(foodDto, image);
@@ -57,4 +59,10 @@ namespace backend.Controllers
             return Ok(new { success = true, message = "Food Updated" });
         }
     }
+
+    public class RemoveFoodByNameRequest
+    {
+        public string Name { get; set; }
+    }
+
 }

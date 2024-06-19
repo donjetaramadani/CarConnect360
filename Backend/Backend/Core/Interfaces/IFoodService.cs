@@ -6,7 +6,7 @@ namespace backend.Core.Interfaces
     {
         Task<bool> AddFoodAsync(CreateFoodDto foodDto, IFormFile image);
         Task<IEnumerable<FoodDto>> ListFoodAsync();
-        Task<bool> RemoveFoodAsync(int id);
+        Task<bool> RemoveFoodByNameAsync(string name);
         Task<bool> UpdateFoodAsync(UpdateFoodDto foodDto, IFormFile image);
     }
 }

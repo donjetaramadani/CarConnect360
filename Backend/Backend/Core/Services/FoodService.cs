@@ -91,6 +91,25 @@ namespace backend.Core.Services
             return true;
         }
 
+        public async Task<bool> RemoveFoodByNameAsync(string name)
+        {
+            var food = await _context.Foods.SingleOrDefaultAsync(f => f.Name == name);
+            if (food == null)
+            {
+                return false;
+            }
+
+            string imagePath = Path.Combine(_hostEnvironment.WebRootPath, "uploads", food.Image);
+            if (System.IO.File.Exists(imagePath))
+            {
+                System.IO.File.Delete(imagePath);
+            }
+
+            _context.Foods.Remove(food);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
         public async Task<bool> UpdateFoodAsync(UpdateFoodDto foodDto, IFormFile image)
         {
             var food = await _context.Foods.FindAsync(foodDto.Id);
