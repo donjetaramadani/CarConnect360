@@ -12,14 +12,14 @@ const FoodDisplay = ({ category }) => {
         async function fetchFoodItems() {
             try {
                 const response = await axios.get(`${url}/api/Food/list`);
-                setFoodList(response.data); // Assuming you have a method to update the foodList in context
+                setFoodList(response.data);
             } catch (error) {
                 console.error('Error fetching food items:', error);
             }
         }
 
         fetchFoodItems();
-    }, [url]);
+    }, [url, setFoodList]);
 
     if (isLoading) {
         return <p>Loading...</p>;

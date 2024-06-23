@@ -16,7 +16,7 @@ const FoodItemList = () => {
                         name={item.name}
                         price={item.price}
                         description={item.description}
-                        image={imageUrl} // Pass the constructed imageUrl
+                        image={imageUrl}
                     />
                 );
             })}

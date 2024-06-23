@@ -12,23 +12,21 @@ const FoodItem = ({ name, price, description, image }) => {
 
     const handleAddToCart = async () => {
         try {
-            await axios.post('/api/Cart/add', { itemName: name });
+            await axios.post('https://localhost:7023/api/Cart/add', { itemName: name });
             addToCart(name);
             console.log('Item added to cart');
         } catch (error) {
             console.error('Error adding item to cart:', error);
-            // Handle error (e.g., show an error message to the user)
         }
     };
 
     const handleRemoveFromCart = async () => {
         try {
-            await axios.post('/api/Cart/remove', { itemName: name });
+            await axios.post('https://localhost:7023/api/Cart/remove', { itemName: name });
             removeFromCart(name);
             console.log('Item removed from cart');
         } catch (error) {
             console.error('Error removing item from cart:', error);
-            // Handle error (e.g., show an error message to the user)
         }
     };
 
