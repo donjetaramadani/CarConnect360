@@ -6,7 +6,7 @@ using backend.Core.DbContext;
 using backend.Core.Dtos.Accessory;
 using backend.Core.Entities;
 using backend.Core.Interfaces;
-using backend.Models.backend.Models;
+using backend.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 

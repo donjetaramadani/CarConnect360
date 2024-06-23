@@ -12,7 +12,7 @@ interface FoodItem {
 }
 
 const List: React.FC = () => {
-    const url = 'https://localhost:7023'; // Update with your backend URL
+    const url = 'https://localhost:7023';
     const [list, setList] = useState<FoodItem[]>([]);
 
     // Fetch list of foods

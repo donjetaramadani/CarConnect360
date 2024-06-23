@@ -1,7 +1,7 @@
 ﻿using System.Reflection.Emit;
 using backend.Core.Entities;
 using backend.Models;
-using backend.Models.backend.Models;
+using backend.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -18,7 +18,7 @@ namespace backend.Core.DbContext
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
-       
+
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<Payment> Payments { get; set; }
@@ -27,6 +27,8 @@ namespace backend.Core.DbContext
         public DbSet<Message> Messages { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Food> Foods { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
+
 
 
 
@@ -62,7 +64,7 @@ namespace backend.Core.DbContext
                 e.HasKey(s => s.Id);
             });
 
-          
+
 
             builder.Entity<Accessory>(e =>
             {
@@ -110,7 +112,12 @@ namespace backend.Core.DbContext
                 e.Property(f => f.Category).IsRequired().HasMaxLength(100);
             });
 
-
+            builder.Entity<CartItem>(e =>
+            {
+                e.ToTable("CartItems"); // Table name for CartItems
+                e.HasKey(ci => ci.ItemName); // Primary key using ItemName
+                                             // Additional configurations if needed
+            });
         }
     }
 }

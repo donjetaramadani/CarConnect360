@@ -2,8 +2,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace backend.Models
 {
-    namespace backend.Models
-    {
         public class Accessory
         {
             public int Id { get; set; }
@@ -13,6 +11,4 @@ namespace backend.Models
             public int CategoryId { get; set; }
             public Category Category { get; set; }
         }
-    }
-
 }
