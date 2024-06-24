@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AgN6UdV+HZphqznhhJHjBvr3WMLyGfuzA6vP8+uwvvE=",
+  "Hash": "KLN0FUw5hF6Hy0v+UVXbweQBlPBz1eJ01i8fe1L6dxs=",
   "Source": "backend",
   "BasePath": "_content/backend",
   "Mode": "Default",
@@ -74,12 +74,12 @@
       "OriginalItemSpec": "wwwroot\\uploads\\38899340-5171-49ec-a196-8250e5991f63_^.jfif"
     },
     {
-      "Identity": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\uploads\\88e52d88-d7f7-48d4-8d88-ce2352052ef5_143A5048.jpg",
+      "Identity": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\uploads\\acd4560d-77cd-4774-974f-14c37a3b5529_A09A6562.jpg",
       "SourceId": "backend",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\",
       "BasePath": "_content/backend",
-      "RelativePath": "uploads/88e52d88-d7f7-48d4-8d88-ce2352052ef5_143A5048.jpg",
+      "RelativePath": "uploads/acd4560d-77cd-4774-974f-14c37a3b5529_A09A6562.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,7 +90,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\88e52d88-d7f7-48d4-8d88-ce2352052ef5_143A5048.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\acd4560d-77cd-4774-974f-14c37a3b5529_A09A6562.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\uploads\\b0307d84-7e20-4527-96e4-5c160221887b_james-bold-lMQv3xVa8X4-unsplash.jpg",
+      "SourceId": "backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\",
+      "BasePath": "_content/backend",
+      "RelativePath": "uploads/b0307d84-7e20-4527-96e4-5c160221887b_james-bold-lMQv3xVa8X4-unsplash.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\b0307d84-7e20-4527-96e4-5c160221887b_james-bold-lMQv3xVa8X4-unsplash.jpg"
     },
     {
       "Identity": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\wwwroot\\uploads\\b95f5a0b-ef7b-430d-8290-1bad4de1b739_Screenshot (328).png",

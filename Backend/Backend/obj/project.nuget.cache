@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QJNJ17v6TEdrRfDDEtUQMFc0o4oVcoz1s9oI7T+7A+WZvnC3ISa/D6TsfAGy9iEBKG7qYi4yu8pILTruwSLVWA==",
+  "dgSpecHash": "3de2jxwYR8/EWljYmUMtc5FUGRG8aWrikD9IeJpvYFk4yff0Qdt3mK7Scyp0HCxjYFJWOcdpQTAtbgJaFQbGyA==",
   "success": true,
   "projectFilePath": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\backend.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,8 @@
     "C:\\Users\\donje\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\donje\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\donje\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\donje\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\donje\\.nuget\\packages\\stripe.net\\44.13.0\\stripe.net.44.13.0.nupkg.sha512",
     "C:\\Users\\donje\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\donje\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\donje\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

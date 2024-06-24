@@ -14,6 +14,7 @@
     "@emotion/styled": "^11.11.5",
     "@hookform/resolvers": "^3.3.4",
     "@mui/material": "^5.15.20",
+    "@stripe/react-stripe-js": "^2.7.1",
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.2",
@@ -37,6 +38,7 @@
     "reactstrap": "^9.2.2",
     "safe-buffer": "^5.2.1",
     "slick-carousel": "^1.8.1",
+    "stripe": "^15.12.0",
     "yup": "^1.4.0"
   },
   "devDependencies": {

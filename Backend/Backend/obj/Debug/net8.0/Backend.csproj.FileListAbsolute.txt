@@ -289,3 +289,5 @@ C:\Users\Adea\OneDrive\Desktop\CarConnect360\Backend\Backend\bin\Debug\net8.0\Ba
 C:\Users\Adea\OneDrive\Desktop\CarConnect360\Backend\Backend\obj\Debug\net8.0\Backend.genruntimeconfig.cache
 C:\Users\Adea\OneDrive\Desktop\CarConnect360\Backend\Backend\obj\Debug\net8.0\ref\Backend.dll
 C:\Users\donje\OneDrive\Desktop\CarConnect360\backend\backend\bin\Debug\net8.0\backend.staticwebassets.runtime.json
+C:\Users\donje\OneDrive\Desktop\CarConnect360\backend\backend\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\donje\OneDrive\Desktop\CarConnect360\backend\backend\bin\Debug\net8.0\Stripe.net.dll

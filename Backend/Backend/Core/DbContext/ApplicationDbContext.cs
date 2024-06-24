@@ -28,7 +28,8 @@ namespace backend.Core.DbContext
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Food> Foods { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
-
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
 
 
 

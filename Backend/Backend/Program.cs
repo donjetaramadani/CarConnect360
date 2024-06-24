@@ -10,6 +10,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Stripe;
+
+using StripeCustomerService = Stripe.CustomerService;
+using BackendCustomerService = backend.Services.CustomerService;
+using StripeProductService = Stripe.ProductService;
+using BackendProductService = backend.Services.ProductService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,10 +37,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<ILogServices, LogService>();
 builder.Services.AddScoped<IMessageService, MessageService>();
 builder.Services.AddScoped<IAuthServices, AuthServices>();
-builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IProductService, BackendProductService>();
 builder.Services.AddScoped<ISupplierService, SupplierService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddScoped<ICustomerService, BackendCustomerService>();
 builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddScoped<IAppointmentService, AppointmentService>();
@@ -144,5 +150,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 
 app.Run();
