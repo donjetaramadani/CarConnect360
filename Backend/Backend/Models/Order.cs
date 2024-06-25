@@ -15,7 +15,8 @@ namespace backend.Models
         [Column(TypeName = "decimal(18,2)")]
         public decimal Amount { get; set; }
 
-        public string Address { get; set; }
+        public int AddressId { get; set; }
+        public Address Address { get; set; }
         public string Status { get; set; } = "Processing";
         public DateTime Date { get; set; } = DateTime.Now;
         public bool Payment { get; set; } = false;

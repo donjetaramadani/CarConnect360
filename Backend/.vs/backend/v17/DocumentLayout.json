@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\core\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\core\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\migrations\\20240624232856_orderandorderitemcreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\migrations\\20240624232856_orderandorderitemcreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\migrations\\20240625155848_addaddresstoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\migrations\\20240625155848_addaddresstoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\models\\foodmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\models\\foodmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\migrations\\20240512132800_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\migrations\\20240512132800_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\models\\foodmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\models\\foodmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -158,12 +174,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 230,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 32,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -173,34 +185,89 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "20240625155848_AddAddressToOrder.cs",
+              "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Migrations\\20240625155848_AddAddressToOrder.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\20240625155848_AddAddressToOrder.cs",
+              "ToolTip": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Migrations\\20240625155848_AddAddressToOrder.cs",
+              "RelativeToolTip": "backend\\Migrations\\20240625155848_AddAddressToOrder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T15:58:53.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Models\\Address.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Address.cs",
+              "ToolTip": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Models\\Address.cs",
+              "RelativeToolTip": "backend\\Models\\Address.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T15:31:45.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240624232856_OrderAndOrderItemCreation.cs",
+              "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Migrations\\20240624232856_OrderAndOrderItemCreation.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\20240624232856_OrderAndOrderItemCreation.cs",
+              "ToolTip": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Migrations\\20240624232856_OrderAndOrderItemCreation.cs",
+              "RelativeToolTip": "backend\\Migrations\\20240624232856_OrderAndOrderItemCreation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T23:29:02.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20240512132800_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Migrations\\20240512132800_InitialCreate.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\20240512132800_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Migrations\\20240512132800_InitialCreate.cs",
+              "RelativeToolTip": "backend\\Migrations\\20240512132800_InitialCreate.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T22:58:30.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\OrderController.cs",
               "ToolTip": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Controllers\\OrderController.cs",
               "RelativeToolTip": "backend\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgAAAAAAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAswDoAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-23T22:13:23.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Models\\Order.cs",
               "RelativeDocumentMoniker": "backend\\Models\\Order.cs",
               "ToolTip": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Models\\Order.cs",
               "RelativeToolTip": "backend\\Models\\Order.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAkwBsAAAAoAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvxEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-23T22:11:44.126Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\CartController.cs",
@@ -208,12 +275,11 @@
               "RelativeToolTip": "backend\\Controllers\\CartController.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAqwB0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T12:14:38.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T12:14:38.252Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "CartService.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Services\\CartService.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Services\\CartService.cs",
@@ -221,12 +287,11 @@
               "RelativeToolTip": "backend\\Core\\Services\\CartService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T12:14:00.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T12:14:00.697Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "ICartService.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Interfaces\\ICartService.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Interfaces\\ICartService.cs",
@@ -234,12 +299,11 @@
               "RelativeToolTip": "backend\\Core\\Interfaces\\ICartService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T12:13:00.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T12:13:00.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "backend\\Models\\CartItem.cs",
@@ -247,12 +311,11 @@
               "RelativeToolTip": "backend\\Models\\CartItem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T12:12:29.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T12:12:29.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "AccessoriesService.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Services\\AccessoriesService.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Services\\AccessoriesService.cs",
@@ -260,12 +323,11 @@
               "RelativeToolTip": "backend\\Core\\Services\\AccessoriesService.cs",
               "ViewState": "AQIAAGUAAAAAAAAAAIA3wAgAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T11:29:42.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T11:29:42.345Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "AuthServices.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Services\\AuthServices.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Services\\AuthServices.cs",
@@ -277,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Models\\User.cs",
               "RelativeDocumentMoniker": "backend\\Models\\User.cs",
@@ -289,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "FoodService.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Services\\FoodService.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Services\\FoodService.cs",
@@ -301,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "IFoodService.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Interfaces\\IFoodService.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Interfaces\\IFoodService.cs",
@@ -313,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "FoodDto.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Dtos\\Auth\\FoodDto.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Dtos\\Auth\\FoodDto.cs",
@@ -325,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "FoodController.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Controllers\\FoodController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\FoodController.cs",
@@ -333,12 +395,11 @@
               "RelativeToolTip": "backend\\Controllers\\FoodController.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAxwEIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T14:45:35.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T14:45:35.451Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 8,
               "Title": "FoodModel.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Models\\FoodModel.cs",
               "RelativeDocumentMoniker": "backend\\Models\\FoodModel.cs",
@@ -346,11 +407,12 @@
               "RelativeToolTip": "backend\\Models\\FoodModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T14:44:03.328Z"
+              "WhenOpened": "2024-06-18T14:44:03.328Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "MessagesController.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Controllers\\MessagesController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\MessagesController.cs",
@@ -362,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "AppointmentService.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Services\\AppointmentService.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Services\\AppointmentService.cs",
@@ -374,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "AppointmentDto.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Dtos\\Auth\\AppointmentDto.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Dtos\\Auth\\AppointmentDto.cs",
@@ -386,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "IAppointment.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Interfaces\\IAppointment.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Interfaces\\IAppointment.cs",
@@ -398,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "AppointmentsControllers.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Controllers\\AppointmentsControllers.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\AppointmentsControllers.cs",
@@ -410,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "Appointments.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Models\\Appointments.cs",
               "RelativeDocumentMoniker": "backend\\Models\\Appointments.cs",
@@ -422,20 +484,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\appsettings.json",
               "RelativeDocumentMoniker": "backend\\appsettings.json",
               "ToolTip": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\appsettings.json",
               "RelativeToolTip": "backend\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-06-13T20:21:30.823Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Entities\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Entities\\ApplicationUser.cs",
@@ -447,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "Log.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Entities\\Log.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Entities\\Log.cs",
@@ -459,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "Message.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Entities\\Message.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Entities\\Message.cs",
@@ -471,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "backend\\Core\\Entities\\BaseEntity.cs",
@@ -483,20 +545,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Program.cs",
               "RelativeDocumentMoniker": "backend\\Program.cs",
               "ToolTip": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Program.cs",
               "RelativeToolTip": "backend\\Program.cs",
-              "ViewState": "AQIAAIEAAAAAAAAAAAAAABMAAAAxAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T16:26:50.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\CustomerController.cs",
@@ -508,7 +570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Accesories.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Models\\Accesories.cs",
               "RelativeDocumentMoniker": "backend\\Models\\Accesories.cs",
@@ -516,12 +578,11 @@
               "RelativeToolTip": "backend\\Models\\Accesories.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T21:30:49.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T21:30:49.492Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "20240530211204_InitialCreateInvoice.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Migrations\\20240530211204_InitialCreateInvoice.cs",
               "RelativeDocumentMoniker": "backend\\Migrations\\20240530211204_InitialCreateInvoice.cs",
@@ -533,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "20240530171123_AddAppointmentsTable.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Migrations\\20240530171123_AddAppointmentsTable.cs",
               "RelativeDocumentMoniker": "backend\\Migrations\\20240530171123_AddAppointmentsTable.cs",
@@ -545,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "20240524153703_AddPaymentClasses.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Migrations\\20240524153703_AddPaymentClasses.cs",
               "RelativeDocumentMoniker": "backend\\Migrations\\20240524153703_AddPaymentClasses.cs",
@@ -557,7 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "RemoveInvoiceNumberFromPayments.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Migrations\\RemoveInvoiceNumberFromPayments.cs",
               "RelativeDocumentMoniker": "backend\\Migrations\\RemoveInvoiceNumberFromPayments.cs",
@@ -569,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "backend\\Models\\Customer.cs",
@@ -581,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "TestController.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Controllers\\TestController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\TestController.cs",
@@ -599,14 +660,14 @@
               "RelativeDocumentMoniker": "backend\\Core\\DbContext\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\DbContext\\ApplicationDbContext.cs",
               "RelativeToolTip": "backend\\Core\\DbContext\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAIAwwB8AAAA4AAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAUwCUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T15:55:22.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\AuthController.cs",
@@ -614,12 +675,11 @@
               "RelativeToolTip": "backend\\Controllers\\AuthController.cs",
               "ViewState": "AQIAAF8AAAAAAAAAAAAswIUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T15:54:59.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T15:54:59.316Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Models\\Category.cs",
               "RelativeDocumentMoniker": "backend\\Models\\Category.cs",
@@ -627,8 +687,7 @@
               "RelativeToolTip": "backend\\Models\\Category.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T15:36:33.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T15:36:33.376Z"
             }
           ]
         }

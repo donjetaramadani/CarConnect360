@@ -30,6 +30,7 @@ namespace backend.Core.DbContext
         public DbSet<CartItem> CartItems { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<Address> Addresses { get; set; }
 
 
 
@@ -118,6 +119,36 @@ namespace backend.Core.DbContext
                 e.ToTable("CartItems"); // Table name for CartItems
                 e.HasKey(ci => ci.ItemName); // Primary key using ItemName
                                              // Additional configurations if needed
+            });
+
+
+            builder.Entity<Order>(e =>
+            {
+                e.ToTable("Orders");
+                e.HasKey(o => o.OrderId);
+                e.Property(o => o.UserId).IsRequired();
+                e.Property(o => o.Amount).IsRequired().HasColumnType("decimal(18,2)");
+                e.Property(o => o.Status).IsRequired().HasMaxLength(50);
+                e.Property(o => o.Date).IsRequired();
+                e.Property(o => o.Payment).IsRequired();
+                e.HasOne(o => o.Address)
+                    .WithMany() // Assuming no navigation property on Address
+                    .HasForeignKey(o => o.AddressId);
+            });
+
+            builder.Entity<OrderItem>(e =>
+            {
+                e.ToTable("OrderItems");
+                e.HasKey(oi => oi.OrderItemId);
+                e.Property(oi => oi.Name).IsRequired().HasMaxLength(100);
+                e.Property(oi => oi.Price).IsRequired().HasColumnType("decimal(18,2)");
+                e.Property(oi => oi.Quantity).IsRequired();
+            });
+
+            builder.Entity<Address>(e =>
+            {
+                e.ToTable("Addresses");
+                e.HasKey(a => a.AddressId);
             });
         }
     }

@@ -7,6 +7,7 @@ const StoreContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({});
     const [foodList, setFoodList] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
+    const [token, setToken] = useState("");
 
     const url = 'https://localhost:7023';
 
@@ -96,12 +97,15 @@ const StoreContextProvider = (props) => {
 
     const contextValue = {
         foodList,
+        setFoodList, // Ensure setFoodList is part of the context value
         cartItems,
         addToCart,
         removeFromCart,
         getTotalCartAmount,
         url,
         isLoading,
+        token,
+        setToken // Include setToken in the context value
     };
 
     return (

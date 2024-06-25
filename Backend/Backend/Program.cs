@@ -48,6 +48,7 @@ builder.Services.AddScoped<IAccessoryService, AccessoryService>();
 builder.Services.AddScoped<IFoodService, FoodService>();
 builder.Services.AddScoped<ICartService, CartService>();
 
+
 // Add Identity
 builder.Services
     .AddIdentity<ApplicationUser, IdentityRole>()

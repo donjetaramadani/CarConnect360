@@ -5,14 +5,17 @@ import FoodItem from '../FoodItem/FoodItem';
 import axios from 'axios';
 
 const FoodDisplay = ({ category }) => {
-    const { foodList, isLoading, setFoodList } = useContext(StoreContext);
-    const url = 'https://localhost:7023'; // Define the base URL
+    const { foodList, isLoading, setFoodList, url } = useContext(StoreContext);
 
     useEffect(() => {
         async function fetchFoodItems() {
             try {
                 const response = await axios.get(`${url}/api/Food/list`);
-                setFoodList(response.data.foodList); // Assuming response.data has foodList property
+                if (response.data.success) {
+                    setFoodList(response.data.data);
+                } else {
+                    console.error('Failed to fetch food list:', response.data.message);
+                }
             } catch (error) {
                 console.error('Error fetching food items:', error);
             }

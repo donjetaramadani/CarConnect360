@@ -3,6 +3,7 @@ using backend.Core.Entities;
 using backend.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 using Stripe;
 using Stripe.Checkout;
 using System;
@@ -29,6 +30,11 @@ namespace backend.Controllers
         [HttpPost("place")]
         public async Task<IActionResult> PlaceOrder([FromBody] Order order)
         {
+
+
+            Console.WriteLine("Received Order:");
+            Console.WriteLine(JsonConvert.SerializeObject(order));
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -75,8 +81,8 @@ namespace backend.Controllers
                 },
                 LineItems = lineItems,
                 Mode = "payment",
-                SuccessUrl = $"http://localhost:5288/verify?success=true&orderId={order.OrderId}",
-                CancelUrl = $"http://localhost:5288/verify?success=false&orderId={order.OrderId}",
+                SuccessUrl = $"https://localhost:3000/verify?success=true&orderId={order.OrderId}",
+                CancelUrl = $"https://localhost:3000/verify?success=false&orderId={order.OrderId}",
             };
 
             var service = new SessionService();

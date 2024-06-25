@@ -1,11 +1,13 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Elements, ElementsConsumer, CardElement } from '@stripe/react-stripe-js';
 import axios from 'axios';
 import { StoreContext } from "../../../context/StoreContext";
-import stripePromise from "../../../utils/stripeConfig"; 
+import { AuthContext } from "../../../auth/auth.context"; 
+import stripePromise from "../../../utils/stripeConfig";
 
 const PlaceOrder = () => {
-    const { getTotalCartAmount, token, food_list, cartItems, url } = useContext(StoreContext);
+    const { getTotalCartAmount, foodList, cartItems, url } = useContext(StoreContext);
+    const { user, token } = useContext(AuthContext);
     const [data, setData] = useState({
         firstName: "",
         lastName: "",
@@ -19,6 +21,13 @@ const PlaceOrder = () => {
     });
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        // Check if foodList is defined
+        if (!foodList) {
+            console.error('Food list is undefined in useEffect');
+        }
+    }, [foodList]);
 
     const onChangeHandler = (event) => {
         const name = event.target.name;
@@ -49,32 +58,48 @@ const PlaceOrder = () => {
             }
 
             let orderItems = [];
-            if (food_list) {
-                food_list.forEach((foodItem) => {
-                    if (cartItems[foodItem.Name] > 0) {
-                        let itemInfo = { ...foodItem, quantity: cartItems[foodItem.Name] };
+            if (foodList) {
+                foodList.forEach((foodItem) => {
+                    if (cartItems[foodItem.name] > 0) {
+                        let itemInfo = { ...foodItem, quantity: cartItems[foodItem.name] };
                         orderItems.push(itemInfo);
                     }
                 });
             } else {
-                console.error('Food list is undefined');
+                console.error('Food list is undefined in handleSubmit');
+                setLoading(false);
+                return;
             }
 
+            const userId = user?.id; // Assuming the user object contains the id
+
             let orderData = {
-                address: data,
+                address: {
+                    firstName: data.firstName,
+                    lastName: data.lastName,
+                    email: data.email,
+                    street: data.street,
+                    city: data.city,
+                    state: data.state,
+                    zipcode: data.zipcode,
+                    country: data.country,
+                    phone: data.phone
+                },
                 items: orderItems,
                 amount: getTotalCartAmount() * 100 + 200, // Stripe expects amount in cents
                 paymentMethodId: paymentMethod.id,
+                userId: userId // Include userId in the payload
             };
 
+            // Make sure token is correctly defined and included in headers
+            const headers = {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json',
+            };
 
-             // Make sure token is correctly defined and included in headers
-        const headers = {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json',
-      };
+            console.log('Order Data:', orderData);
 
-            let response = await axios.post("https://localhost:7023/api/Order/place", orderData, { headers });
+            let response = await axios.post(`${url}/api/Order/place`, orderData, { headers });
 
             if (response.data.success) {
                 const { sessionUrl } = response.data;
@@ -83,7 +108,7 @@ const PlaceOrder = () => {
                 alert("Error");
             }
         } catch (error) {
-            console.error('Error placing order:', error);
+            console.error('Error placing order:', error.response ? error.response.data : error.message);
             setError(error.message);
         } finally {
             setLoading(false);
@@ -207,13 +232,14 @@ const PlaceOrder = () => {
                                             <b>${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2}</b>
                                         </div>
                                     </div>
-                                    <button
-                                        type="submit"
-                                        style={styles.button}
-                                        disabled={loading}
-                                    >
-                                        {loading ? 'Processing...' : 'PROCEED TO PAYMENT'}
-                                    </button>
+                                   <button
+                                    type="submit"
+                                    disabled={loading}
+                                    className="place-order-button"
+                                    style={styles.button}
+                                >
+                                    {loading ? "Processing..." : "Place Order"}
+                                </button>
                                 </div>
                             </div>
                         </form>
