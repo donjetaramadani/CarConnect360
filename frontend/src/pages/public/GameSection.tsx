@@ -41,7 +41,7 @@ const GameSection: React.FC = () => {
 
   return (
     <section className="game-section">
-      <h2 className="line-title">Trending Games</h2>
+      <h2 className="line-title">Popular Vehicles</h2>
       <div className="owl-carousel custom-carousel owl-theme">
         <div className="item">
           <img src="https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg" alt="Dota 2" />
@@ -52,40 +52,40 @@ const GameSection: React.FC = () => {
         </div>
         <div className="item">
           <img src="https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg" alt="The Witcher 3" />
-          <div className="item-desc">
+         {/* <div className="item-desc">
             <h3>The Witcher 3</h3>
             <p>The Witcher 3: Wild Hunt is an action role-playing game developed by CD Projekt Red. It is the third game in the series based on The Witcher series of fantasy novels by Andrzej Sapkowski.</p>
-          </div>
+          </div>*/}
         </div>
         <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg)'}}>
-          <div className="item-desc">
+          {/*  <div className="item-desc">
             <h3>The Witcher 3</h3>
             <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-          </div>
+          </div>*/}
         </div>
         <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg)'}}>
-          <div className="item-desc">
+          {/*  <div className="item-desc">
             <h3>The Witcher 3</h3>
             <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-          </div>
+          </div>*/}
         </div>
         <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg)'}}>
-          <div className="item-desc">
+          {/*  <div className="item-desc">
             <h3>The Witcher 3</h3>
             <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-          </div>
+          </div>*/}
         </div>
         <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg)'}}>
-          <div className="item-desc">
+          {/*  <div className="item-desc">
             <h3>The Witcher 3</h3>
             <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-          </div>
+          </div>*/}
         </div>
-        <div className="item" style={{backgroundImage: 'url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg)'}}>
-          <div className="item-desc">
+        <div className="item" style={{backgroundImage: './car.jpg'}}>
+          {/*  <div className="item-desc">
             <h3>The Witcher 3</h3>
             <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-          </div>
+          </div>*/}
         </div>
         {/* Add more OwlCarousel items as needed */}
       </div>

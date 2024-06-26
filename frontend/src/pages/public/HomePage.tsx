@@ -43,10 +43,10 @@ const HomePage = () => {
   <div className="container-fluid p-0">
     <div className="row justify-content-center">
       <div className="col-lg-8 text-center mx-auto my-auto">
-        <h1 className="text-white">Work with an amazing design</h1>
-        <p className="lead mb-4 text-white opacity-8">We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game</p>
-        <button type="submit" className="btn bg-white text-dark">Create Account</button>
-        <h6 className="text-white mb-2 mt-5">Find us on</h6>
+        <h1 className="text-white">Your Gateway to Automotive Excellence</h1>
+        <p className="lead mb-4 text-white opacity-8">Embrace innovation and drive your aspirations forward. With CarConnect360, the game of finding your perfect vehicle becomes a seamless, exhilarating adventure.</p>
+     {/*   <button type="submit" className="btn bg-white text-dark">Create Account</button>
+        <h6 className="text-white mb-2 mt-5">Find us on</h6>*/}
         <div className="d-flex justify-content-center">
           <a href="javascript:;"><i className="fab fa-facebook text-lg text-white me-4" /></a>
           <a href="javascript:;"><i className="fab fa-instagram text-lg text-white me-4" /></a>
@@ -85,25 +85,26 @@ const HomePage = () => {
         <div className="row">
           <div className="col-md-4 position-relative">
             <div className="p-3 text-center">
-              <h1 className="text-gradient text-primary"><span id="state1">0</span>+</h1>
-              <h5 className="mt-3">Coded Elements</h5>
-              <p className="text-sm">From buttons, to inputs, navbars, alerts or cards, you are covered</p>
+              <h1 className="text-gradient text-primary"><span id="state1">1000</span>+</h1>
+              <h5 className="mt-3">Integrated Automotive Solutions</h5>
+              <p className="text-sm">Fully integrated platform for browsing, purchasing, and renting vehicles</p>
             </div>
             <hr className="vertical dark" />
           </div>
           <div className="col-md-4 position-relative">
             <div className="p-3 text-center">
-              <h1 className="text-gradient text-primary"> <span id="state2">0</span>+</h1>
-              <h5 className="mt-3">Design Blocks</h5>
-              <p className="text-sm">Mix the sections, change the colors and unleash your creativity</p>
+              <h1 className="text-gradient text-primary"> <span id="state2"></span>∞</h1>
+              <h5 className="mt-3">User-Centric Design
+              </h5>
+              <p className="text-sm">From intuitive navigation to detailed vehicle information and service booking capabilities</p>
             </div>
             <hr className="vertical dark" />
           </div>
           <div className="col-md-4">
             <div className="p-3 text-center">
-              <h1 className="text-gradient text-primary" id="state3">0</h1>
-              <h5 className="mt-3">Pages</h5>
-              <p className="text-sm">Save 3-4 weeks of work when you use our pre-made pages for your website</p>
+              <h1 className="text-gradient text-primary" id="state3"><span id="state1">500</span>+</h1>
+              <h5 className="mt-3">Innovation and Efficiency</h5>
+              <p className="text-sm">Empowers users to customize their automotive websites effortlessly, saving significant time and resources while maintaining a competitive edge in the market. </p>
             </div>
           </div>
         </div>
@@ -187,16 +188,17 @@ const HomePage = () => {
             <div className="front front-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)', backgroundSize: 'cover' }}>
               <div className="card-body py-7 text-center">
                 <i className="material-icons text-white text-4xl my-3">touch_app</i>
-                <h3 className="text-white">Feel the <br /> Material Kit</h3>
-                <p className="text-white opacity-8">All the Bootstrap components that you need in a development have been re-design with the new look.</p>
+                <h3 className="text-white"> CarConnect360 Experience</h3>
+                <p className="text-white opacity-8">Save time transitioning from prototyping to fully functional code with all elements seamlessly implemented for an efficient automotive browsing experience.</p>
               </div>
             </div>
             <div className="back back-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80)', backgroundSize: 'cover' }}>
               <div className="card-body pt-5 text-center">
                 <h3 className="text-white">Discover More</h3>
-                <p className="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
-               {/* <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>*/}
-                <Link to={PATH_PUBLIC.Cars} className="btn btn-white btn-sm w-50 mx-auto mt-3">Discover Cars</Link>
+                <p className="text-white opacity-8"> Browse through a diverse selection of vehicles available for sale and rent, complete with detailed specifications and transparent pricing. Find your perfect match with ease.</p>
+               {/* <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>  */}
+               {/*   <Link to={PATH_PUBLIC.Cars} className="btn btn-white btn-sm w-50 mx-auto mt-3">Discover Cars</Link>  */}
+               <Link to={PATH_PUBLIC.home} className="btn btn-white btn-sm w-50 mx-auto mt-3">Discover Cars</Link> 
               </div>
             </div>
           </div>
@@ -208,14 +210,14 @@ const HomePage = () => {
             <div className="front front-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)', backgroundSize: 'cover' }}>
               <div className="card-body py-7 text-center">
                 <i className="material-icons text-white text-4xl my-3">touch_app</i>
-                <h3 className="text-white">Feel the <br /> Material Kit</h3>
-                <p className="text-white opacity-8">All the Bootstrap components that you need in a development have been re-design with the new look.</p>
+                <h3 className="text-white">Accessory Kit</h3>
+                <p className="text-white opacity-8">Save time transitioning from prototyping to fully functional code with all elements seamlessly implemented, ensuring your automotive accessories stand out with ease.</p>
               </div>
             </div>
             <div className="back back-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80)', backgroundSize: 'cover' }}>
               <div className="card-body pt-5 text-center">
                 <h3 className="text-white">Discover More</h3>
-                <p className="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
+                <p className="text-white opacity-8"> Discover a range of automotive accessories that complement your style and enhance functionality. From practical enhancements to stylish additions, find accessories that meet your needs</p>
                {/* <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>*/}
                 <Link to={PATH_PUBLIC.Accessories} className="btn btn-white btn-sm w-50 mx-auto mt-3">Discover Accessories</Link>
               </div>
@@ -236,16 +238,16 @@ const HomePage = () => {
             <div className="front front-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)', backgroundSize: 'cover' }}>
               <div className="card-body py-7 text-center">
                 <i className="material-icons text-white text-4xl my-3">touch_app</i>
-                <h3 className="text-white">Feel the <br /> Material Kit</h3>
-                <p className="text-white opacity-8">All the Bootstrap components that you need in a development have been re-design with the new look.</p>
+                <h3 className="text-white">Lifestyle Collection</h3>
+                <p className="text-white opacity-8">Save time transitioning from prototyping to fully functional code with all elements seamlessly implemented, enhancing your automotive lifestyle offerings effortlessly.</p>
               </div>
             </div>
             <div className="back back-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80)', backgroundSize: 'cover' }}>
               <div className="card-body pt-5 text-center">
                 <h3 className="text-white">Discover More</h3>
-                <p className="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
+                <p className="text-white opacity-8"> Explore a curated collection of automotive lifestyle products designed to enrich your driving experience. From apparel to gadgets, find items that reflect your passion for cars.</p>
                {/* <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>*/}
-                <Link to={PATH_PUBLIC.Life} className="btn btn-white btn-sm w-50 mx-auto mt-3">Discover Life Style</Link>
+                <Link to={PATH_PUBLIC.home} className="btn btn-white btn-sm w-50 mx-auto mt-3">Discover Life Style</Link>
               </div>
             </div>
           </div>
@@ -257,16 +259,16 @@ const HomePage = () => {
             <div className="front front-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)', backgroundSize: 'cover' }}>
               <div className="card-body py-7 text-center">
                 <i className="material-icons text-white text-4xl my-3">touch_app</i>
-                <h3 className="text-white">Feel the <br /> Material Kit</h3>
-                <p className="text-white opacity-8">All the Bootstrap components that you need in a development have been re-design with the new look.</p>
+                <h3 className="text-white">Service Excellence</h3>
+                <p className="text-white opacity-8">Save time transitioning from prototyping to fully functional code, optimizing your automotive service operations for enhanced efficiency and customer satisfaction.</p>
               </div>
             </div>
             <div className="back back-background" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80)', backgroundSize: 'cover' }}>
               <div className="card-body pt-5 text-center">
                 <h3 className="text-white">Discover More</h3>
-                <p className="text-white opacity-8"> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</p>
+                <p className="text-white opacity-8">Access essential automotive services directly through our platform. From maintenance to repair, streamline your vehicle management with trusted service providers and convenient booking options.</p>
                 {/*<a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Start with Headers</a>*/}
-                <Link to={PATH_PUBLIC.Services} className="btn btn-white btn-sm w-50 mx-auto mt-3">Discover Services</Link>
+                <Link to={PATH_PUBLIC.home} className="btn btn-white btn-sm w-50 mx-auto mt-3">Discover Services</Link>
               </div>
             </div>
           </div>
@@ -438,8 +440,7 @@ const HomePage = () => {
           <div className="col-md-6 m-auto">
             <h4>Be the first to see the news</h4>
             <p className="mb-4">
-              Your company may not be in the software business,
-              but eventually, a software company will be in your business.
+            Your industry might not be centered around technology now, but soon, technology will be at the heart of every successful business.
             </p>
             <div className="row">
               <div className="col-8">
@@ -473,9 +474,9 @@ const HomePage = () => {
         <div className="col-md-3 mb-4 ms-auto">
           <div>
             <a href="https://www.creative-tim.com/product/material-kit">
-              <img src="../assets/img/logo-ct-dark.png" className="mb-3 footer-logo" alt="main_logo" />
+           
             </a>
-            <h6 className="font-weight-bolder mb-4">Material Kit 2</h6>
+            <h6 className="font-weight-bolder mb-4">CarConnect360</h6>
           </div>
           <div>
             <ul className="d-flex flex-row ms-n3 nav">
@@ -512,22 +513,22 @@ const HomePage = () => {
             <h6 className="text-sm">Company</h6>
             <ul className="flex-column ms-n3 nav">
               <li className="nav-item">
-                <a className="nav-link" href="https://www.creative-tim.com/presentation" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   About Us
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="https://www.creative-tim.com/templates/free" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   Freebies
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="https://www.creative-tim.com/templates/premium" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   Premium Tools
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="https://www.creative-tim.com/blog" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   Blog
                 </a>
               </li>
@@ -539,17 +540,17 @@ const HomePage = () => {
             <h6 className="text-sm">Resources</h6>
             <ul className="flex-column ms-n3 nav">
               <li className="nav-item">
-                <a className="nav-link" href="https://iradesign.io/" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   Illustrations
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="https://www.creative-tim.com/bits" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   Bits &amp; Snippets
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="https://www.creative-tim.com/affiliates/new" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   Affiliate Program
                 </a>
               </li>
@@ -561,22 +562,22 @@ const HomePage = () => {
             <h6 className="text-sm">Help &amp; Support</h6>
             <ul className="flex-column ms-n3 nav">
               <li className="nav-item">
-                <a className="nav-link" href="https://www.creative-tim.com/contact-us" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   Contact Us
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="https://www.creative-tim.com/knowledge-center" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   Knowledge Center
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="https://services.creative-tim.com/?ref=ct-mk2-footer" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   Custom Development
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="https://www.creative-tim.com/sponsorships" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   Sponsorships
                 </a>
               </li>
@@ -588,17 +589,17 @@ const HomePage = () => {
             <h6 className="text-sm">Legal</h6>
             <ul className="flex-column ms-n3 nav">
               <li className="nav-item">
-                <a className="nav-link" href="https://www.creative-tim.com/knowledge-center/terms-of-service" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   Terms &amp; Conditions
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="https://www.creative-tim.com/knowledge-center/privacy-policy" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   Privacy Policy
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="https://www.creative-tim.com/license" target="_blank">
+                <a className="nav-link" href="" target="_blank">
                   Licenses (EULA)
                 </a>
               </li>
@@ -608,7 +609,7 @@ const HomePage = () => {
         <div className="col-12">
           <div className="text-center">
             <p className="text-dark my-4 text-sm font-weight-normal">
-              All rights reserved. Copyright ©  Material Kit by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+              All rights reserved.  Copyright © <a href="" target="_blank">CarConnect360</a>.
             </p>
           </div>
         </div>

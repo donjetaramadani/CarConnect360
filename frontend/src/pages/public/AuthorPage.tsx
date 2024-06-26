@@ -79,7 +79,7 @@ const AuthorPage = () => {
         <div className="mt-n8 mt-md-n9 text-center img-container">
           <img 
             className="wide-img shadow-xl position-relative z-index-2 taller-img" 
-            src="../assets/img/bruce-mars.jpg" 
+            src="../assets/img/o.jpg" 
             alt="bruce" 
             loading="lazy" 
           />
@@ -109,14 +109,14 @@ const AuthorPage = () => {
                 <div className="info">
                   <i className="material-icons text-3xl text-gradient text-info mb-3">public</i>
                   <h5>Fully integrated</h5>
-                  <p>We get insulted by others, lose trust for those We get back freezes</p>
+                  <p>We provide a seamless browsing and purchasing experience, ensuring that our users find the perfect vehicle without any hassle.</p>
                 </div>
               </div>
               <div className="col-md-6">
                 <div className="info">
                   <i className="material-icons text-3xl text-gradient text-info mb-3">payments</i>
                   <h5>Payments functionality</h5>
-                  <p>We get insulted by others, lose trust for those We get back freezes</p>
+                  <p>Our platform offers robust payment options, making transactions smooth and secure for all users.</p>
                 </div>
               </div>
             </div>
@@ -125,14 +125,14 @@ const AuthorPage = () => {
                 <div className="info">
                   <i className="material-icons text-3xl text-gradient text-info mb-3">apps</i>
                   <h5>Prebuilt components</h5>
-                  <p>We get insulted by others, lose trust for those We get back freezes</p>
+                  <p>Experience our enhanced platform, designed to meet all your automotive needs efficiently and effectively.</p>
                 </div>
               </div>
               <div className="col-md-6">
                 <div className="info">
                   <i className="material-icons text-3xl text-gradient text-info mb-3">3p</i>
                   <h5>Improved platform</h5>
-                  <p>We get insulted by others, lose trust for those We get back freezes</p>
+                  <p>Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System to save both time and money.</p>
                 </div>
               </div>
               <div className="col-md-6 mt-3">
@@ -158,10 +158,10 @@ const AuthorPage = () => {
               </div>
               <div className="card-body text-center">
                 <h5 className="font-weight-normal">
-                  <a href="javascript:;">Get insights on Search</a>
+                  <a href="javascript:;">Advanced Analytics</a>
                 </h5>
                 <p className="mb-0">
-                  Website visitors today demand a frictionless user expericence — especially when using search. Because of the hight standards.
+                Website visitors today demand a frictionless user experience—especially when using search. CarConnect360 goes a step further by providing advanced analytics, giving you valuable insights into user behavior and preferences.
                 </p>
                 <button type="button" className="btn bg-gradient-info btn-sm mb-0 mt-3">Find out more</button>
               </div>
@@ -190,11 +190,10 @@ const AuthorPage = () => {
               </div>
               <div className="card-body px-0">
                 <h5>
-                  <a href="javascript:;" className="text-dark font-weight-bold">Rover raised $65 million</a>
+                  <a href="javascript:;" className="text-dark font-weight-bold">CarConnect360 raised $65 million in Funding</a>
                 </h5>
                 <p>
-                  Finding temporary housing for your dog should be as easy as
-                  renting an Airbnb. That’s the idea behind Rover ...
+                CarConnect360 has successfully raised $65 million to revolutionize the automotive browsing and purchasing experience. This funding will enable us to expand our offerings and improve our platform...
                 </p>
                 <a href="javascript:;" className="text-info text-sm icon-move-right">Read More
                   <i className="fas fa-arrow-right text-xs ms-1" />
@@ -211,11 +210,10 @@ const AuthorPage = () => {
               </div>
               <div className="card-body px-0">
                 <h5>
-                  <a href="javascript:;" className="text-dark font-weight-bold">MateLabs machine learning</a>
+                  <a href="javascript:;" className="text-dark font-weight-bold">Advanced Machine Learning for Vehicle Recommendations</a>
                 </h5>
                 <p>
-                  If you’ve ever wanted to train a machine learning model
-                  and integrate it with IFTTT, you now can with ...
+                Our latest update integrates advanced machine learning algorithms to provide personalized vehicle recommendations, making it easier for users to find their ideal car...
                 </p>
                 <a href="javascript:;" className="text-info text-sm icon-move-right">Read More
                   <i className="fas fa-arrow-right text-xs ms-1" />
@@ -232,11 +230,11 @@ const AuthorPage = () => {
               </div>
               <div className="card-body px-0">
                 <h5>
-                  <a href="javascript:;" className="text-dark font-weight-bold">MateLabs machine learning</a>
+                  <a href="javascript:;" className="text-dark font-weight-bold">Streamlined Vehicle Rental Processes</a>
                 </h5>
                 <p>
-                  If you’ve ever wanted to train a machine learning model
-                  and integrate it with IFTTT, you now can with ...
+                CarConnect360 introduces streamlined processes for vehicle rentals, ensuring a hassle-free experience for our users.
+                 Learn more about how we are simplifying rentals...
                 </p>
                 <a href="javascript:;" className="text-info text-sm icon-move-right">Read More
                   <i className="fas fa-arrow-right text-xs ms-1" />
@@ -249,8 +247,8 @@ const AuthorPage = () => {
               <div className="full-background" style={{backgroundImage: 'url("../assets/img/examples/blog2.jpg")'}}  />
               <div className="card-body">
                 <div className="content-left text-start my-auto py-4">
-                  <h2 className="card-title text-white">Flexible work hours</h2>
-                  <p className="card-description text-white">Rather than worrying about switching offices every couple years, you stay in the same place.</p>
+                  <h2 className="card-title text-white">Flexible Maintenance Scheduling</h2>
+                  <p className="card-description text-white">Forget rigid maintenance schedules. With CarConnect360, you can book vehicle maintenance at your convenience, ensuring your car is always in top condition without disrupting your schedule.</p>
                   <a href="javascript:;" className="text-white text-sm icon-move-right">Read More
                     <i className="fas fa-arrow-right text-xs ms-1" />
                   </a>
@@ -269,8 +267,8 @@ const AuthorPage = () => {
         <div className="row">
           <div className="col-lg-6 mx-auto text-center">
             <h2 className="mb-0">Trusted by over</h2>
-            <h2 className="text-gradient text-primary mb-3">1,679,477+ web developers</h2>
-            <p className="lead">Many Fortune 500 companies, startups, universities and governmental institutions love Creative Tim's products. </p>
+            <h2 className="text-gradient text-primary mb-3">1,679,477+ Car Enthusiasts and Professionals</h2>
+            <p className="lead">Many automotive businesses, car enthusiasts, and service providers love CarConnect360's offerings. </p>
           </div>
         </div>
         <div className="row mt-6">
@@ -285,7 +283,7 @@ const AuthorPage = () => {
                     </div>
                   </div>
                 </div>
-                <p className="mt-4">"This is an excellent product, the documentation is excellent and helped me get things done more efficiently."</p>
+                <p className="mt-4">"This platform is fantastic! The user interface is intuitive, and it made finding my dream car incredibly easy."</p>
                 <div className="rating mt-3">
                   <i className="fas fa-star" />
                   <i className="fas fa-star" />
@@ -307,7 +305,7 @@ const AuthorPage = () => {
                     </div>
                   </div>
                 </div>
-                <p className="mt-4 text-white">"I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"</p>
+                <p className="mt-4 text-white">"I've used CarConnect360 for all my car rental needs. It's affordable and reliable. The support team is very helpful and responsive!"</p>
                 <div className="rating mt-3">
                   <i className="fas fa-star text-white" />
                   <i className="fas fa-star text-white" />
@@ -329,7 +327,7 @@ const AuthorPage = () => {
                     </div>
                   </div>
                 </div>
-                <p className="mt-4">"Great product. Helped me cut the time to set up a site. I used the components within instead of starting from scratch. I highly recommend for developers who want to spend more time on the backend!."</p>
+                <p className="mt-4">"CarConnect360 saved me a lot of time. I found the perfect vehicle components and maintenance services without any hassle. Highly recommended for car enthusiasts!"</p>
                 <div className="rating mt-3">
                   <i className="fas fa-star" />
                   <i className="fas fa-star" />
@@ -372,7 +370,7 @@ const AuthorPage = () => {
                         <i className="fas fa-envelope text-sm" />
                       </div>
                       <div className="ps-3">
-                        <span className="text-sm opacity-8">hello@creative-tim.com</span>
+                        <span className="text-sm opacity-8">support@carconnect360.com</span>
                       </div>
                     </div>
                     <div className="d-flex p-2 text-white">
@@ -380,7 +378,7 @@ const AuthorPage = () => {
                         <i className="fas fa-map-marker-alt text-sm" />
                       </div>
                       <div className="ps-3">
-                        <span className="text-sm opacity-8">Dyonisie Wolf Bucharest, RO 010458</span>
+                        <span className="text-sm opacity-8">Rruga Ahmet Krasniqi, Prishtina, Kosovo 10000</span>
                       </div>
                     </div>
                     <div className="mt-4">
@@ -449,8 +447,9 @@ const AuthorPage = () => {
             <h3 className="text-gradient text-primary mb-0">You liked it and</h3>
             <h3>Want more?</h3>
             <p className="pe-md-5 mb-4">
-              Most complex and innovative Design System Made by <a href="https://creative-tim.com/" target="_blank">Creative Tim </a> . Check our latest Premium Bootstrap 5 UI Kit.
-              Designed for those who like bold elements and beautiful websites. Made of hundred of elements, designed blocks and fully coded pages, Material Kit is ready to help you create stunning websites and webapps.
+            Explore the most comprehensive and innovative design system created by CarConnect360. <br/>Check out our latest Premium Automotive UI Kit.
+            <br/>Designed for those who appreciate bold elements and beautiful interfaces, our UI Kit is packed with hundreds of components, designed blocks, and fully coded pages.
+            <br/> CarConnect360's Material Kit is ready to help you create stunning automotive websites and web apps.
             </p>
             <div className="github-buttons">
               <a href="https://www.creative-tim.com/product/material-kit-pro?ref=index-mk2" target="_blank" className="btn bg-gradient-primary mb-5 mb-sm-0">Upgrade to Pro</a>
@@ -473,7 +472,7 @@ const AuthorPage = () => {
         <div className="row">
           <div className="col-lg-5 ms-auto">
             <h4 className="mb-1">Thank you for your support!</h4>
-            <p className="lead mb-0">We deliver the best web products</p>
+            <p className="lead mb-0">We are committed to delivering the best automotive web solutions.</p>
           </div>
           <div className="col-lg-5 me-lg-auto my-lg-auto text-lg-end mt-5">
             <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Kit%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23bootstrap5&url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit" className="btn btn-twitter mb-0 me-2" target="_blank">
@@ -521,12 +520,12 @@ const AuthorPage = () => {
             </li>
           </ul>
           <p className="text-sm text-dark opacity-8 mb-0">
-            Copyright ©  Material Design by Creative Tim.
+          Copyright © CarConnect360
           </p>
         </div>
         <div className="col-lg-6 ms-auto text-lg-end text-center">
           <p className="mb-5 text-lg text-dark font-weight-bold">
-            The reward for getting on the stage is fame. The price of fame is you can’t get off the stage.
+          The reward for achieving excellence is recognition. The challenge of recognition is maintaining that excellence.
           </p>
           <a href="javascript:;" target="_blank" className="text-dark me-xl-4 me-4 opacity-5">
             <span className="fab fa-dribbble" />

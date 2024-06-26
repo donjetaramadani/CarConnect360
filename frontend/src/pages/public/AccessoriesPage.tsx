@@ -26,7 +26,7 @@ const  AccessoriesPage = () => {
   <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
   <script src="./src/script.js"></script>
   <title>
-    Material Kit 2 by Creative Tim
+  Accessories
   </title>
   {/*     Fonts and icons     */}
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -55,8 +55,8 @@ const  AccessoriesPage = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-7 text-center mx-auto">
-            <h1 className="text-white pt-3 mt-n5">Material Kit 2</h1>
-            <p className="lead text-white mt-3">Free &amp; Open Source Web UI Kit built over Bootstrap 5. <br /> Join over 1.6 million developers around the world. </p>
+            <h1 className="text-white pt-3 mt-n5"> Accessories</h1>
+            <p className="lead text-white mt-3">Rest assured that each product meets our high standards of quality and reliability.</p>
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@ const  AccessoriesPage = () => {
             <div className="col-lg-6 ms-lg-5">
               <h4 className="text-white">Built by developers</h4>
               <h1 className="text-white">Complex Documentation</h1>
-              <p className="lead text-white opacity-8">From colors, cards, typography to complex elements, you will find the full documentation. Play with the utility classes and you will create unlimited combinations for our components.</p>
+              <p className="lead text-white opacity-8">From vehicle specifications to maintenance tips and accessory integration, CarConnect360 provides comprehensive documentation. Dive into detailed guides covering every aspect of our products to enhance your automotive experience.</p>
               <a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit" className="text-white icon-move-right">
                 Read docs
                 <i className="fas fa-arrow-right text-sm ms-1" />
@@ -93,7 +93,7 @@ const  AccessoriesPage = () => {
             <i className="material-icons text-white text-3xl">flag</i>
             <div className="ps-0 ps-md-3 mt-3 mt-md-0">
               <h5 className="text-white">Getting Started</h5>
-              <p className="text-white">Check the possible ways of working with our product and the necessary files for building your own project.</p>
+              <p className="text-white">Discover various ways to utilize our platform effectively. Learn about the essential files and setup required to integrate CarConnect360 seamlessly into your automotive projects.</p>
               <a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit" className="text-white icon-move-right">
                 Let's start
                 <i className="fas fa-arrow-right text-sm ms-1" />
@@ -106,7 +106,7 @@ const  AccessoriesPage = () => {
             <i className="material-icons text-gradient text-primary text-3xl">precision_manufacturing</i>
             <div className="ps-0 ps-md-3 mt-3 mt-md-0">
               <h5>Plugins</h5>
-              <p>Get inspiration and have an overview about the plugins that we used to create the Material Kit.</p>
+              <p>Gain inspiration and insights into the plugins powering CarConnect360's innovative features. Explore how these plugins enhance functionality and streamline automotive operations.</p>
               <a href="https://www.creative-tim.com/learning-lab/bootstrap/datepicker/material-kit" className="text-primary icon-move-right">
                 Read more
                 <i className="fas fa-arrow-right text-sm ms-1" />
@@ -119,7 +119,9 @@ const  AccessoriesPage = () => {
             <i className="material-icons text-gradient text-primary text-3xl">receipt_long</i>
             <div className="ps-0 ps-md-3 mt-3 mt-md-0">
               <h5>Utility Classes</h5>
-              <p>Material Kit is giving you a lot of pre-made elements. For those who want flexibility, we included many utility classes.</p>
+              <p>CarConnect360 offers a wide array of pre-made elements and utility classes. Customize your automotive platform effortlessly with flexible design options and modular components.
+
+</p>
               <a href="https://www.creative-tim.com/learning-lab/bootstrap/utilities/material-kit" className="text-primary icon-move-right">
                 Read more
                 <i className="fas fa-arrow-right text-sm ms-1" />

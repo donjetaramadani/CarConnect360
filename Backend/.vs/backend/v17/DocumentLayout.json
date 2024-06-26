@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\core\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\core\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|solutionrelative:backend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47B7621B-952C-425F-A507-B95F5ACB2E62}|backend\\backend.csproj|c:\\users\\donje\\onedrive\\desktop\\carconnect360\\backend\\backend\\migrations\\20240624232856_orderandorderitemcreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -174,7 +174,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 230,
-          "SelectedChildIndex": 32,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -198,8 +198,7 @@
               "RelativeToolTip": "backend\\Migrations\\20240625155848_AddAddressToOrder.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFoAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T15:58:53.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T15:58:53.78Z"
             },
             {
               "$type": "Document",
@@ -211,8 +210,7 @@
               "RelativeToolTip": "backend\\Models\\Address.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAwBYAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T15:31:45.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T15:31:45.411Z"
             },
             {
               "$type": "Document",
@@ -224,8 +222,7 @@
               "RelativeToolTip": "backend\\Migrations\\20240624232856_OrderAndOrderItemCreation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T23:29:02.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T23:29:02.026Z"
             },
             {
               "$type": "Document",
@@ -241,20 +238,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\OrderController.cs",
               "ToolTip": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Controllers\\OrderController.cs",
               "RelativeToolTip": "backend\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAswDoAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-23T22:13:23.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Models\\Order.cs",
               "RelativeDocumentMoniker": "backend\\Models\\Order.cs",
@@ -262,8 +259,7 @@
               "RelativeToolTip": "backend\\Models\\Order.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAADwvxEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T22:11:44.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T22:11:44.126Z"
             },
             {
               "$type": "Document",
@@ -407,8 +403,7 @@
               "RelativeToolTip": "backend\\Models\\FoodModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T14:44:03.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T14:44:03.328Z"
             },
             {
               "$type": "Document",
@@ -484,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\appsettings.json",
               "RelativeDocumentMoniker": "backend\\appsettings.json",
@@ -492,8 +487,7 @@
               "RelativeToolTip": "backend\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-13T20:21:30.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T20:21:30.823Z"
             },
             {
               "$type": "Document",
@@ -545,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Program.cs",
               "RelativeDocumentMoniker": "backend\\Program.cs",
@@ -553,8 +547,7 @@
               "RelativeToolTip": "backend\\Program.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAAADEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T16:26:50.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T16:26:50.501Z"
             },
             {
               "$type": "Document",
@@ -654,7 +647,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\donje\\OneDrive\\Desktop\\CarConnect360\\backend\\backend\\Core\\DbContext\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "backend\\Core\\DbContext\\ApplicationDbContext.cs",
@@ -662,8 +655,7 @@
               "RelativeToolTip": "backend\\Core\\DbContext\\ApplicationDbContext.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAUwCUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T15:55:22.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T15:55:22.004Z"
             },
             {
               "$type": "Document",

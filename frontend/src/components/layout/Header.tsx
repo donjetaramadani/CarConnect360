@@ -60,7 +60,7 @@ const Header = () => {
           className="w-8 h-8 text-purple-500 hover:text-purple-700 cursor-pointer"
           onClick={() => navigate('/')}
         />
-        <span className="text-lg font-bold">Logo</span>
+        <span className="text-lg font-bold">CarConnect360</span>
       </div>
       <div className="flex items-center gap-2">
         <Button
@@ -97,22 +97,22 @@ const Header = () => {
               variant="light"
               className="mr-2"
             />
-            <Button
+          {/*  <Button
               label="temp"
               onClick={() => navigate(PATH_PUBLIC.temp)}
               type="button"
               variant="light"
               className="mr-2"
-            />
-            <Button
+            />*/}
+           {/* <Button
               label="Presentation"
               onClick={() => navigate(PATH_PUBLIC.presentation)}
               type="button"
               variant="light"
               className="mr-2"
-            />
+            />*/}
             <Button
-              label="Author"
+              label="About Us4"
               onClick={() => navigate(PATH_PUBLIC.author)}
               type="button"
               variant="light"
