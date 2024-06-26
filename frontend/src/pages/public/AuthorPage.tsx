@@ -525,7 +525,7 @@ const AuthorPage = () => {
         </div>
         <div className="col-lg-6 ms-auto text-lg-end text-center">
           <p className="mb-5 text-lg text-dark font-weight-bold">
-          The reward for achieving excellence is recognition. The challenge of recognition is maintaining that excellence.
+          The reward for achieving excellence is recognition. The challenge of recognition is maintaining that excellence..
           </p>
           <a href="javascript:;" target="_blank" className="text-dark me-xl-4 me-4 opacity-5">
             <span className="fab fa-dribbble" />
